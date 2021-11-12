@@ -1,22 +1,20 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
 
-const Home: NextPage = () => (
+import ChatScreen from '../components/chat/ChatScreen';
+
+const Chat: NextPage = () => (
   <div>
     <Head>
-      <title>LineHayat</title>
+      <title>Chat - LineHayat</title>
       <meta name="description" content="LineHayat description" />
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
     <main>
-      <h1>
-        LineHayat homepage
-      </h1>
-      <Link href="/chat">Chat</Link>
+      <ChatScreen />
     </main>
   </div>
 );
 
-export default Home;
+export default Chat;
