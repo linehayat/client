@@ -4,6 +4,7 @@ import Screen1 from './Screen1';
 import Screen2 from './Screen2';
 import TermsOfUse from './Screen3';
 import WaitingRoom from './Screen4';
+import Chat from './Screen5';
 
 function ChatScreen() {
   const [currentScreen, setCurrentScreen] = useState(0);
@@ -16,7 +17,7 @@ function ChatScreen() {
   }
 
   function goToNextScreen() {
-    if (currentScreen < 3) {
+    if (currentScreen < 4) {
       setCurrentScreen((currentScreen) => currentScreen + 1);
     }
   }
@@ -30,12 +31,11 @@ function ChatScreen() {
       {currentScreen === 1 && <Screen2 />}
       {currentScreen === 2 && <TermsOfUse setUserAcceptsTermsOfUse={setUserAcceptsTermsOfUse} />}
       {currentScreen === 3 && <WaitingRoom />}
-      {0 < currentScreen && <button onClick={goToPreviousScreen}>
-        {currentScreen === 3 ? 'Cancel chat' : 'Previous'}
-      </button>}
-      {currentScreen < 3 && <button onClick={goToNextScreen} disabled={currentScreen === 2 && !userAcceptsTermsOfUse}>
-        {currentScreen === 2 ? 'Chat' : 'Next'}
-      </button>}
+      {currentScreen === 4 && <Chat />}
+      {0 < currentScreen && currentScreen < 3 && <button onClick={goToPreviousScreen}>Previous</button>}
+      {currentScreen === 3 && <button onClick={goToPreviousScreen}>Cancel chat</button>}
+      {currentScreen < 2 && <button onClick={goToNextScreen}>Next</button>}
+      {currentScreen === 2 && <button onClick={goToNextScreen} disabled={!userAcceptsTermsOfUse}>Chat</button>}
     </div>
   );
 }
