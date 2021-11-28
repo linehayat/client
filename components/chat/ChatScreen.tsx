@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import { closeConnection, requestChat, awaitResponse } from '../../utils';
 import Screen1 from './Screen1';
 import Screen2 from './Screen2';
 import TermsOfUse from './Screen3';
@@ -33,9 +34,16 @@ function ChatScreen() {
       {currentScreen === 3 && <WaitingRoom />}
       {currentScreen === 4 && <Chat />}
       {0 < currentScreen && currentScreen < 3 && <button onClick={goToPreviousScreen}>Previous</button>}
-      {currentScreen === 3 && <button onClick={goToPreviousScreen}>Cancel chat</button>}
+      {currentScreen === 3 && <button onClick={() => {
+        closeConnection('student canceled chat request');
+        goToPreviousScreen();
+      }}>Cancel chat</button>}
       {currentScreen < 2 && <button onClick={goToNextScreen}>Next</button>}
-      {currentScreen === 2 && <button onClick={goToNextScreen} disabled={!userAcceptsTermsOfUse}>Chat</button>}
+      {currentScreen === 2 && <button onClick={() => {
+        goToNextScreen();
+        requestChat();
+        awaitResponse(goToNextScreen);
+      }} disabled={!userAcceptsTermsOfUse}>Chat</button>}
     </div>
   );
 }
