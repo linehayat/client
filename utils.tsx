@@ -61,4 +61,20 @@ function handleChatEvents({ onNewMessage }: ChatEventCallbacks) {
   }
 }
 
-export { closeConnection, requestChat, awaitResponse, handleChatEvents };
+function sendMessage(message: string) {
+  if (connection === null) {
+    throw 'connection is null';
+  }
+  connection.send(JSON.stringify({
+    metadata: {
+      identity: localStorage.getItem('id'),
+      type: 'student'
+    },
+    type: 6,
+    payload: {
+      message
+    }
+  }));
+}
+
+export { closeConnection, requestChat, awaitResponse, handleChatEvents, sendMessage };
