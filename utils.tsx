@@ -8,6 +8,7 @@ let connection: WebSocket | null = null;
 function openConnection() {
   if (connection === null) {
     connection = new WebSocket(process.env.NEXT_PUBLIC_WEBSOCKET_HOST as string);
+    connection.onclose = () => connection = null;
   }
 }
 
