@@ -1,5 +1,6 @@
 interface ChatEventCallbacks {
   onNewMessage: (newMessage: string) => void;
+  onChatEnd: () => void;
 }
 
 let connection: WebSocket | null = null;
@@ -47,7 +48,7 @@ function awaitResponse(onResponse: () => void) {
   }
 }
 
-function handleChatEvents({ onNewMessage }: ChatEventCallbacks) {
+function handleChatEvents({ onNewMessage, onChatEnd }: ChatEventCallbacks) {
   if (connection === null) {
     throw 'connection is null';
   }
@@ -56,6 +57,9 @@ function handleChatEvents({ onNewMessage }: ChatEventCallbacks) {
     switch (data.type) {
       case 2:
         onNewMessage(data.message);
+        break;
+      case 6:
+        onChatEnd();
         break;
     }
   }
@@ -77,4 +81,17 @@ function sendMessage(message: string) {
   }));
 }
 
-export { closeConnection, requestChat, awaitResponse, handleChatEvents, sendMessage };
+function endChat() {
+  if (connection === null) {
+    throw 'connection is null';
+  }
+  connection.send(JSON.stringify({
+    metadata: {
+      identity: localStorage.getItem('id'),
+      type: 'student',
+    },
+    type: 7,
+  }));
+}
+
+export { closeConnection, requestChat, awaitResponse, handleChatEvents, sendMessage, endChat };
