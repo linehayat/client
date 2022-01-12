@@ -1,0 +1,10 @@
+.privacyView {
+    margin: 5vh auto;
+    width: 80%;
+    text-align: justify;
+}
+
+.privacyView > h4{
+    width: fit-content;
+    text-align: left;
+}

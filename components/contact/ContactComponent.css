@@ -1,0 +1,39 @@
+.contactView {
+    margin: 0 auto 0 auto;
+}
+
+.socialsIcon:not(first-child){
+    margin-top: 1vh;
+}
+
+.socialsText{
+    text-align: left;
+    margin-top: auto !important;
+    margin-bottom: auto !important;
+}
+
+.socialsIcon{
+    margin-right: 2vw;
+}
+
+@media (max-width: 700px) {
+    .contactView {
+        width:80%;
+    }
+
+    .socialsIcon{
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+@media (min-width: 701px) {
+    .contactView {
+        width: 100%;
+    }
+
+    .socialsIcon{
+        width: 80px !important;
+        height: 80px !important;
+    }
+}

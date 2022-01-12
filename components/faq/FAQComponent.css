@@ -1,0 +1,37 @@
+h1{
+}
+
+h2{
+}
+
+.questionSection{
+  width: 75vw;
+}
+
+.faq-card{
+  border: none !important;
+  border-radius: 5px;
+  min-height: 7vh;
+}
+
+.faq-card-header{
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+.faq-card-body{
+}
+
+.selectedCard{
+  background-color: rgb(202, 221, 222) !important;
+}
+
+.notSelectedCard{
+  background-color: white !important;
+}
+
+.question {
+  text-space: 0;
+}
+

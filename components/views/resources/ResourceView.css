@@ -1,0 +1,39 @@
+.resourceImage {
+    width: 80%;
+    height: 100%;
+}
+
+.jumbotronButtonContainer {
+    margin: 5em auto;
+}
+
+.jumbotronButton {
+    width: 20%;
+    min-width: fit-content;
+    text-transform: none;
+    color: #5b4c43 !important;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    background-color: #F6D1C8;
+    margin: 0 !important;
+}
+
+.selectedButton {
+    background-color: #ececec !important;
+}
+
+@media (min-width: 700px) {
+    .jumbotronButtonContainer {
+        width: 50%;
+    }
+}
+
+.topContainer{
+    background-color: #FFF7E4;
+}
+
+.bottomContainer{
+    background-color: #F3F3F3;
+    min-height: 100vh;
+    padding-bottom: 5vh;
+}

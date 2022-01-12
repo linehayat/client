@@ -1,0 +1,202 @@
+{
+  "en": {
+    "questions": {
+      "general": [
+        {
+          "questionText": "What is LineHayat?",
+          "answerText": "LineHayat is a Listening Service organisation similar to a Nightline in the UK and Ireland, fully run by students for students which aims to help the Sharers as much as possible by lending an ear to anything they want to share."
+        },
+        {
+          "questionText": "Who are the Sharers of LineHayat?",
+          "answerText": "LineHayat’s Sharers are university students who contact us through Call or Live Chat on our website. We are currently open to Universiti Sains Malaysia (USM) students, as we work towards establishing a supportive Mental Health community in USM."
+        },
+        {
+          "questionText": "Who are the ones organising this?",
+          "answerText": "LineHayat is organised by a diverse group of people from various backgrounds, all coming together as a team to make this project a reality. Check out our Meet The Team page to get to know our members!"
+        },
+        {
+          "questionText": "Why was LineHayat created?",
+          "answerText": "LineHayat was created for the purpose of coping with and combating mental health issues among university students. We hope to provide a safe and confidential space for anyone who wishes to reach out for support."
+        },
+        {
+          "questionText": "How can LineHayat help me?",
+          "answerText": "LineHayat will do our best to be the listener you need! You can share anything you want with our Listening Volunteer. We won’t tell you what to do, but we will guide you so that you can decide what is best for you."
+        },
+        {
+          "questionText": "What services are offered by LineHayat?",
+          "answerText": "We provide Listening Services via Call or Live Chat on our website."
+        },
+        {
+          "questionText": "Are LineHayat’s services anonymous?",
+          "answerText": "Yes, LineHayat has a strict anonymity and confidentiality policy to keep your privacy safe."
+        },
+        {
+          "questionText": "How does LineHayat keep my anonymity?",
+          "answerText": "We will not record conversations nor will we ask for any personal information."
+        },
+        {
+          "questionText": "Are there any fees for LineHayat’s Listening Services?",
+          "answerText": "No fees will be collected to use LineHayat’s Listening Services. It’s free! Apart from that, you will only need an Internet connection to use our online Call or Live Chat Services."
+        }
+      ],
+      "sharer": [
+        {
+          "questionText": "Who will I be calling/texting with?",
+          "answerText": "You will be talking or chatting with our trained Listening Volunteers from USM. The Listening Volunteer will remain anonymous, just as you will."
+        },
+        {
+          "questionText": "How and where can I make a call/text?",
+          "answerText": "Our online call and chat services can be accessed via the Home page. Just click on the \"Live Chat\" or \"Call Us\" button and you will be put in a waiting room. You will be connected to a Listening Volunteer when it reaches your turn. Our services can also be accessed through the Reach Us tab."
+        },
+        {
+          "questionText": "During the Call or Live Chat, do I have to inform the Listening Volunteer of anything?",
+          "answerText": "When you enter into our Call or Live Chat space, you may lead the conversation with anything you would like to talk about. We are here to listen to whatever you wish to share. Please be reminded that we should not be informed of any of your personal information."
+        },
+        {
+          "questionText": "How can I share my experience and give my comments about the session I’ve been in?",
+          "answerText": "We would be glad to hear your feedback and deeply appreciate your suggestions for improvements in the future. You may fill the feedback form on the Home page and let us know!"
+        },
+        {
+          "questionText": "Will there be anyone else in the call/chat?",
+          "answerText": "Absolutely not! The conversations will be one-on-one and the information will be kept private and confidential."
+        }
+      ],
+      "volunteer": [
+        {
+          "questionText": "Who are the Listening Volunteers?",
+          "answerText": "Our Listening Volunteers are your friendly neighbourhood university students! We are students that hope to ensure a smooth operation in LineHayat. We might not be professionals, but we will spare no effort in helping you."
+        },
+        {
+          "questionText": "Are the Listening Volunteers professionally trained?",
+          "answerText": "The Listening Volunteers are comprehensively trained by experienced mental health professionals, but are not considered mental health professionals themselves."
+        },
+        {
+          "questionText": "How can I become a Listening Volunteer in LineHayat?",
+          "answerText": "We would love to expand our LineHayat family, you may read more about Listening Volunteers and proceed to the application process on the Volunteer page! Can’t wait to see you \uD83D\uDE09"
+        },
+        {
+          "questionText": "What is required to be a Listening Volunteer?",
+          "answerText": "The only thing we need from our Listening Volunteers is the heart and passion for helping others in need! Oh, we prefer university students hehe."
+        }
+      ],
+      "supporters": [
+        {
+          "questionText": "I am really intrigued by your organization. Is there any way that I can support the initiative?",
+          "answerText": "We would really appreciate it if you could follow us on our social media and let everyone know of LineHayat! You can access links to our social media on the Home page."
+        },
+        {
+          "questionText": "Is LineHayat under any patronage? Are there any sponsors or other organizations that you work with?",
+          "answerText": "LineHayat received seed funding by winning Pitch@USM, a platform for staff and students of USM to pitch for funding and execute their innovative ideas to create positive impacts for society."
+        },
+        {
+          "questionText": "Do you accept donations?",
+          "answerText": "We will post more information on donations when the information becomes available."
+        },
+        {
+          "questionText": "What is the process of becoming a volunteer?",
+          "answerText": "Further notice regarding other volunteering positions will be posted on this website or our social media. We deeply appreciate your interest!"
+        }
+      ]
+    }
+  },
+  "my": {
+    "questions": {
+      "general": [
+        {
+          "questionText": "What is LineHayat?",
+          "answerText": "LineHayat is a nightline organisation that aims to help the Sharers as much as possible by lending an ear to anything they might want to share."
+        },
+        {
+          "questionText": "Who are the Sharers of LineHayat?",
+          "answerText": "LineHayat’s Sharers are individuals who call in or text us. We are currently open to Universiti Sains Malaysia (USM) students, as we work towards establishing a supportive Mental Health community in USM."
+        },
+        {
+          "questionText": "Who are the ones organising this?",
+          "answerText": "LineHayat is organised by a diverse group of people from various backgrounds, all coming in together as a team to make this project a reality. Check out Our Team to get to know our members!"
+        },
+        {
+          "questionText": "Why was LineHayat created?",
+          "answerText": "LineHayat was created for the purpose of coping and combating the rising mental health issues among university students. We hope to provide a safe and confidential space for anyone who wishes to reach out for support. "
+        },
+        {
+          "questionText": "How can LineHayat help me?",
+          "answerText": "LineHayat will do our best to be the listener you need! You can share with our Listening Volunteer anything that you want to. We won’t tell you what to do, but we will guide and assist you so that you can decide what is best for you. We will also provide other services that we think would be helpful for you."
+        },
+        {
+          "questionText": "What services are offered by LineHayat?",
+          "answerText": "We provide Listening Services via online call and chat."
+        },
+        {
+          "questionText": "Are LineHayat’s services anonymous?",
+          "answerText": "Yes, LineHayat has a strict anonymity and confidentiality policy to keep your privacy safe."
+        },
+        {
+          "questionText": "How does LineHayat keep my anonymity?",
+          "answerText": "We will not record conversations nor will we ask for any personal information."
+        },
+        {
+          "questionText": "Are there any fees for LineHayat’s Listening Services?",
+          "answerText": "You will only need an Internet connection to use our online call and chat services. Apart from that, it’s free! LineHayat does not impose any charges for our services."
+        }
+      ],
+      "sharer": [
+        {
+          "questionText": "Who will I be calling/texting with?",
+          "answerText": "You will be talking/texting with our trained Listening Volunteers from Universiti Sains Malaysia. The Listening Volunteer will remain anonymous, just as you will."
+        },
+        {
+          "questionText": "How and where can I make a call/text?",
+          "answerText": "Our online call and chat services can be accessed here. Just click the ‘Live Chat’ or ‘Call Us’ button and you will be put in a waiting room. You will be connected to a Listening Volunteer when it reaches your turn."
+        },
+        {
+          "questionText": "During a session, do I have to inform the Listening Volunteers of anything?",
+          "answerText": "When you enter into a call or chat space, you may lead the conversation with anything you would like to talk about. We are here to listen to whatever you wish to share. Please be reminded that we b  should not be informed of any of your personal information."
+        },
+        {
+          "questionText": "How can I share my experience and give my comments about the session I’ve been in?",
+          "answerText": "We would be glad to hear your feedback and deeply appreciate your suggestions for improvements in the future. You may fill in this feedback form and let us know!"
+        },
+        {
+          "questionText": "Will there be anyone else in the call/chat?",
+          "answerText": "Absolutely not! The conversations will be one-on-one and the information will be kept private and confidential."
+        }
+      ],
+      "volunteer": [
+        {
+          "questionText": "Who are the Listening Volunteers?",
+          "answerText": "Our Listening Volunteers are your friendly neighbourhood university students! We are students that hope to ensure a smooth operation in LineHayat. We might not be professionals, but we will spare no effort in helping you."
+        },
+        {
+          "questionText": "Are the Listening Volunteers professionally trained?",
+          "answerText": "The Listening Volunteers are comprehensively trained by experienced mental health professionals, but are not considered mental health professionals themselves."
+        },
+        {
+          "questionText": "How can I become a Listening Volunteer in LineHayat?",
+          "answerText": "We  would love to expand our LineHayat family, you may read about Listening Volunteer and proceed to the application process here! Can’t wait to see you \uD83D\uDE09"
+        },
+        {
+          "questionText": "What is required to be a Listening Volunteer?",
+          "answerText": "The only thing we need from our Listening Volunteers is the heart and passion in helping others in need! Oh, we prefer university students hehe."
+        }
+      ],
+      "supporters": [
+        {
+          "questionText": "I am really intrigued by your organization. Is there any way that I can support the initiative?",
+          "answerText": "We would really appreciate it if you could follow us on our social media and let everyone know of LineHayat!"
+        },
+        {
+          "questionText": "Is LineHayat under any patronage? Are there any sponsors or other organizations that you work with?",
+          "answerText": "LineHayat received seed funding by winning Pitch@USM, a platform for staff and students of USM to pitch for funding and execute their innovative ideas to create positive impacts for society."
+        },
+        {
+          "questionText": "Do you accept donations?",
+          "answerText": "We will post more information on donations when the information becomes available."
+        },
+        {
+          "questionText": "What is the process of becoming a volunteer?",
+          "answerText": "Simply fill in this Google Form and a follow-up email will be sent to you. Further notice regarding other volunteering positions will be posted on this website or our social media. We deeply appreciate your interest!"
+        }
+      ]
+    }
+  }
+}

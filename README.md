@@ -28,7 +28,7 @@ yarn dev
 
 Open [http://localhost:3000](http://localhost:3000) with a web browser.
 
-## Contributing
+## publicuting
 
 1. Fork this repo to create a copy on your GitHub account. The Fork button is in the top right of the page.
 2. Clone your copy of this repo to your local machine: `git clone <YOUR FORKED REPO URL>`

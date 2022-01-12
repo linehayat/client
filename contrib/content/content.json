@@ -1,0 +1,56 @@
+{
+  "my": {
+    "header": {
+      "home": "Linehayat",
+      "helped": "Reach us",
+      "chat": "Chat Service",
+      "call": "Call Service",
+      "privacy": "Privacy Policy",
+      "volunteer": "Volunteer",
+      "resources": "Resources",
+      "support": "Sokong kami!",
+      "getConnected": "Get Connected",
+      "feedback": "Feedback Form",
+      "team": "Pasukan",
+      "whoWeAre": "Who we are",
+      "hebatAgenda":  "Hebat Agenda"
+    },
+    "home": {
+      "imsg": "Instant Messanger",
+      "aboutUs": "Tentang kita",
+      "callUs" : "Call Us",
+      "info": "<div>\nTalian hotline dibuka Mo-Fr<br/>Dari jam 8 malam hingga tengah malam<br/><br/>Hubungi kami: XXXX 1234511</div>"
+    },
+    "team": {
+      "meetTheTeam": "JUMPA PASUKAN",
+      "joinus": "Sertai kami!"
+    }
+  },
+  "en": {
+    "header": {
+      "home": "Linehayat",
+      "helped": "Reach us",
+      "chat": "Chat Service",
+      "call": "Call Service",
+      "privacy": "Privacy Policy",
+      "volunteer": "Volunteer",
+      "resources": "Resources",
+      "getConnected": "Get Connected",
+      "feedback": "Feedback Form",
+      "support": "SUPPORT US",
+      "team": "MEET THE TEAM",
+      "whoWeAre": "Who we are",
+      "hebatAgenda":  "Hebat Agenda"
+    },
+    "home": {
+      "imsg": "Live Chat",
+      "aboutUs": "About us",
+      "callUs": "Call Us",
+      "info": "<div>Welcome to LineHayat, an anonymous listening service that allows USM students to call in (or text) and have someone to listen and support.</div>\n<br/>\n<div>\nOur hotline is open from\n<br/> \n<span style=\"font-style: oblique;color: white;\">Monday - Friday, 8pm - 2am</span>\n</div>\n<br/>\n<div>Call us at: +6017-357 xxxx</div>\n"
+    },
+    "team": {
+      "meetTheTeam": "Meet the Team",
+      "joinus": "Join us!"
+    }
+  }
+}

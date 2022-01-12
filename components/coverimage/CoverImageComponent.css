@@ -1,0 +1,80 @@
+.mainImage {
+  width: 100%;
+  height: 80vh;
+  position: relative;
+
+  border-bottom: solid black 5px;
+}
+
+.bgImage{
+  object-fit: cover;
+}
+
+.lHLogo{
+  width: 150px;
+  height: 150px;
+
+  margin-bottom: 2vh;
+}
+
+@media (max-width: 700px){
+  .lHLogo{
+    visibility: hidden;
+  }
+}
+
+
+
+.courtesyText{
+  text-align: left;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  color: white;
+  font-size: 0.5rem;
+
+  margin-left: 5px;
+}
+
+.hoverContent {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: black solid 1px;
+
+  padding: 30px;
+}
+
+.buttonContainer{
+  display: inline-block;
+}
+
+.infoContainer{
+  width: 50vw;
+  height: fit-content;
+  font-size: 20px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: auto;
+  color: darkgray;
+}
+
+.text-center{
+  position: absolute;
+  top: 40%;
+  left: 20%;
+}
+
+.btn:first-child {
+  margin-right: 2vw;
+}
+
+@media (max-width: 700px){
+  .btn:first-child {
+    margin-bottom: 2vh;
+  }
+}
+
+.flagholder{
+  width: 20px;
+  height: 20px;
+}
+

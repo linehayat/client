@@ -1,0 +1,32 @@
+{
+  "en": {
+    "helplines": [
+      {
+        "title": "Befrienders KL",
+        "body": "<p>Emotional support hotline.</p>\n<p>Confidential, free, non-judgemental.</p>\n<p class=\"highlight\">24 hours, everyday.</p>\n<p class=\"bold\">Contact Befrienders suicide helpline:</p>\n<p class=\"highlight\">03-76272929</p>\n<p>Befrienders KL official website: <a href=\"https://www.befrienders.org.my/\">https://www.befrienders.org.my/</a></p>"
+      },
+      {
+        "title": "Befrienders Penang",
+        "body": "<p>WhatsApp service can be contacted through <span class=\"highlight\">011-56706261</span> and may use either Bahasa Malaysia, English or Mandarin<p>\n<p>Offers face-to-face befriending at their center, strictly through appointment. Please call Befrienders Penang to arrange the meet up.</p>\n<p class=\"highlight\">Operating hours from Monday to Sunday (3pm to 12 midnight).</p>\n<p>\n    Address:</br><span class=\"highlight\">\n    Counselling Centre Penang (The Befrienders) Pulau Pinang,</br>\n    Mewah Court, Blok 104 – 1A,</br>\n    Jalan Tan Sri The Ewe Lim,</br>\n    Pulau Pinang, 11600</br></span>\n</p>\n<p>General call number:</br>\n    <span class=\"highlight\">04-2910100</span></p>\n<p>Contact email: </br>\n    <span class=\"highlight\">pat@befpen.org</span></p>\n<p>Befrienders Penang official website: <a href=\"https://befpen.org/\">https://befpen.org/</a></p>\n<p>Official Facebook page: <a href=\"https://m.facebook.com/befrienderspenang\">https://m.facebook.com/befrienderspenang</a></p>"
+      },
+      {
+        "title": "USM Counselling Office",
+        "body": "<p>Exclusive for USMians!</p>\n<p>Services include individual counselling, group counselling, individual support, group support, and psychology test.</p>\n<p class=\"highlight\">Open from Monday to Friday (8.10 am-5.10pm).</p>\n<p>Address:</p>\n<p class=\"highlight\">Unit Kaunseling, Bangunan H24,</br>\n    Bahagian Hal Ehwal Pembangunan Pelajar & Alumni (BHEPA) Kompleks Cahaya</br>\n    11800, Gelugor, Penang</p>\n<p>Contact numbers:</p>\n<p class=\"highlight\">04-6535836/3410/3411/3459</p>\n<p>Contact email:</p>\n<p class=\"highlight\">salwati@usm.my</br>\n    hidayah_halim@usm.my</p>"
+      },
+      {
+        "title": "Malaysian Mental Health Service (MMHA)",
+        "body": "<p class=\"highlight\">Open on Mon-Sat (9am-5pm).</p>\n<p>Offer a variety of services such as:</p>\n<p>-Psychiatric Rehabilitation Program</br>-Counselling and Psychotherapy Services</br>-D'light Home -Mental Health Education Program</br>-Caregiver and Peer Support Services</p>\n<p>Contact number:</p>\n<p class=\"highlight\">03-27806803</p>\n<p>Contact email:</p>\n<p class=\"highlight\">admin@mmha.org.my</p>\n<p>MMHA official website: <a href=\"https://mmha.org.my/\">https://mmha.org.my/</a></p>\n<p>MMHA official Facebook page: <a href=\"https://www.facebook.com/MMHAOfficial/\">https://www.facebook.com/MMHAOfficial/</a></p>"
+      },
+      {
+        "title": "Penang General Hospital",
+        "body": "<p class=\"highlight\">Open on Mon-Sat (9am-5pm).</p>\n<p>Address:</p>\n<p class=\"highlight\">Hospital Pulau Pinang,</br>\n    Jalan Residensi,</br>\n    10990 George Town, Pulau Pinang</p>\n<p>General call number:</p>\n<p class=\"highlight\">04-2225333</p>\n<p>Contact email:</p>\n<p class=\"highlight\">hpinang@moh.gov.my</p>\n<p>Penang General Hospital official website: <a href=\"https://jknpenang.moh.gov.my/hpp/\">https://jknpenang.moh.gov.my/hpp/</a></p>"
+      }
+    ]
+  },
+  "my": {
+    "helplines": [
+      "<h2>A<h2><p>text</p>",
+      "<h2>B<h2><p>text</p>"
+    ]
+  }
+}

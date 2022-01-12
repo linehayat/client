@@ -1,0 +1,22 @@
+.helplines-card:not(first-child){
+    margin-top: 5em;
+    text-align: left !important;
+    border-radius: 10px;
+
+    background: #CFDED7 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.helplines-card-odd {
+    background: #FFF7E4 0% 0% no-repeat padding-box !important;
+}
+
+.helplines-card-body{
+    width: 100% !important;
+}
+
+.helplines-card-title {
+    color: #5B4C43 !important;
+    font: normal normal bold 30px/30px crimsonfont;
+    text-transform: none !important;
+}
