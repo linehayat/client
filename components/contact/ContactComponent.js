@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Button from 'react-bootstrap/Button';
 
 function ContactComponent() {
@@ -77,14 +78,11 @@ function ContactComponent() {
           comments would be anonymous.
         </p>
         <div className="mt-3">
-          <a
-            href="https://docs.google.com/forms/d/1sS2esF4vrfVe9bhoo0TBOn4rrPTSpCGnwfbSiKOZINY/viewform?edit_requested=true"
-           
-          >
+          <Link href="/feedback">
             <Button variant="secondary" className="buttonHome">
               Feedback Form
             </Button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

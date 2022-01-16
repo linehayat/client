@@ -33,7 +33,7 @@ function Header() {
           <NavLink className="nav-title" href="/faq">FAQ</NavLink>
 
           <NavDropdown className="nav-title" title="Our Contacts" id="basic-nav-dropdown">
-            <NavDropdown.Item href='/contact'>Contact us</NavDropdown.Item>
+            <NavDropdown.Item href='/#contact'>Contact us</NavDropdown.Item>
             <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
           </NavDropdown>
 
