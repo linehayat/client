@@ -1,16 +1,40 @@
+import { VStack, Box, Text, UnorderedList, ListItem, Image } from '@chakra-ui/react';
+
 function WaitingRoom() {
   return (
-    <div>
-      <p>Waiting Room</p>
-      <p>Hi friend, you are in the queue. I will reach out to you soon. Thank you for your patience.</p>
-      <p>While waiting, I would like to tell you:</p>
-      <ul>
-        <li>Feel free to share your feelings and thoughts</li>
-        <li>Talk at your own pace and willingness</li>
-        <li>It’s okay to stay silent if you want to gather your thoughts</li>
-      </ul>
-      <p>I appreciate you being here today.</p>
-    </div>
+    <VStack
+        justifyContent="center"
+        h="full" w="full"
+        px="2"
+        fontSize="1.25em" fontFamily="Print Clearly" fontWeight="600" textAlign="center"
+        overflow="auto"
+      >
+        <Box h="140px" overflowY="hidden" marginTop={["0", "-48px"]}>
+          <Image
+            src="/phone-call.gif"
+            h="320px"
+            marginTop="-100px"
+            objectFit="scale-down"
+          />
+        </Box>
+        <Text className="berkshire-font" fontWeight="400" fontSize={["1em", "1.25em"]} color="#5B4C43">Waiting Room</Text>
+
+        <VStack w="100%" px="4" justifyContent="center" color="#5B4C43">
+          <Text>Hi Friend,</Text>
+          <Text>you are in the queue. \(^V^)/</Text>
+
+          <Text>I will reach out to you soon. Thank you for your patience.</Text>
+
+          <Text>While waiting, I would like to tell you:</Text>
+          <UnorderedList w={["auto", "480px"]} px="4" textAlign="left" fontFamily="printclearly">
+            <ListItem>Feel free to share your feelings and thoughts.</ListItem>
+            <ListItem>Talk at your own pace and willingness.</ListItem>
+            <ListItem>It’s okay to stay silent if you want to gather your thoughts.</ListItem>
+          </UnorderedList>
+
+          <Text mb="8">I appreciate you being here today.</Text>
+        </VStack>
+      </VStack>
   );
 }
 

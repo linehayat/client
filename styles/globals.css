@@ -13,6 +13,15 @@
   src: url('../contrib/font/Crimson-Bold.otf') format('opentype');
 }
 
+@font-face {
+  font-family: 'Quicksand';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(/fonts/quicksand.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -572,7 +581,7 @@ body {
   outline: 0 !important;
 }
 
-main {
+main > * {
   padding: 0 1rem;
 }
 
@@ -1002,7 +1011,7 @@ pre code {
   }
 }
 @media (min-width: 768px) {
-  main {
+  main > * {
     padding: 0 20%;
   }
 
@@ -10008,4 +10017,28 @@ th {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  float: right;
+  height: 2rem;
+  width: 2rem;
+  position: relative;
+}
+
+.star-rating label img {
+  position: absolute;
+}
+
+.star-rating label .full-star {
+  opacity: 0;
+  transition: opacity 100ms;
+}
+ 
+.star-rating input:checked ~ label .full-star {
+  opacity: 1;
 }
