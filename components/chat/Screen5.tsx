@@ -89,8 +89,10 @@ function Chat() {
         </HStack>
       </Box>
       {isChatEndModalOpen && <Modal>
-        <p>Volunteer ended the chat</p>
-        <Link href="/feedback">Leave feedback</Link>
+        <div>
+          <p>Volunteer ended the chat</p>
+          <Link href="/feedback">Leave feedback</Link>
+        </div>
       </Modal>}
     </>
   );

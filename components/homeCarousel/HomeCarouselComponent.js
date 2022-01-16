@@ -85,12 +85,6 @@ function HomeCarouselComponent() {
         <Row style={{ width: "fit-content", marginRight: "0" }}>
           <Col sm={12} xs={12} md={12} lg={6}>
             <Button variant="primary" href="/chat" className="buttonHome">
-              <Image
-                layout="fill"
-                src="/chat-icon.svg"
-                className="homeButtonIcon"
-                height="10rem"
-              />
               Live Chat
             </Button>
           </Col>

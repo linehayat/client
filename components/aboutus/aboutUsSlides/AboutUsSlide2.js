@@ -11,37 +11,35 @@ function AboutUsSlide2(props) {
   // }
   return (
     <div className="slide1ContentPositioning">
+      <h2>Who We Are:</h2>
       <div>
-        <h2>Who We Are:</h2>
-        <div style={{ margin: '5% 0 0 0' }}>
-          <p>
-            LineHayat is a Listening Service that aims to provide peer support
-            to Universiti Sains Malaysia (USM) students.
-          </p>
-          <p>
-            This service is run by students for students to ensure comfortable
-            communication and it is completely free-of-charge.
-          </p>
-          <p>
-            We also understand the need to maintain privacy when it comes to
-            talking about problems.
-          </p>
-          <p>Therefore, we are established on these three main ideas:</p>
-          <ul
-            style={{ width: 'fit-content', textAlign: 'center' }}
-            className="whoWeAreList crimson-font highlight"
-          >
-            <li style={{ width: 'fit-content' }}>
-              <p>Anonymous peer support</p>
-            </li>
-            <li style={{ width: 'fit-content' }}>
-              <p>Trained volunteerism</p>
-            </li>
-            <li style={{ width: 'fit-content' }}>
-              <p>Peer capacity building</p>
-            </li>
-          </ul>
-        </div>
+        <p>
+          LineHayat is a Listening Service that aims to provide peer support
+          to Universiti Sains Malaysia (USM) students.
+        </p>
+        <p>
+          This service is run by students for students to ensure comfortable
+          communication and it is completely free-of-charge.
+        </p>
+        <p>
+          We also understand the need to maintain privacy when it comes to
+          talking about problems.
+        </p>
+        <p>Therefore, we are established on these three main ideas:</p>
+        <ul
+          style={{ width: 'fit-content', textAlign: 'center' }}
+          className="whoWeAreList crimson-font highlight"
+        >
+          <li style={{ width: 'fit-content' }}>
+            <p>Anonymous peer support</p>
+          </li>
+          <li style={{ width: 'fit-content' }}>
+            <p>Trained volunteerism</p>
+          </li>
+          <li style={{ width: 'fit-content' }}>
+            <p>Peer capacity building</p>
+          </li>
+        </ul>
       </div>
     </div>
   );

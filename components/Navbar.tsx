@@ -34,7 +34,7 @@ function Header() {
 
           <NavDropdown className="nav-title" title="Our Contacts" id="basic-nav-dropdown">
             <NavDropdown.Item href='/contact'>Contact us</NavDropdown.Item>
-            <NavDropdown.Item href="https://docs.google.com/forms/d/1sS2esF4vrfVe9bhoo0TBOn4rrPTSpCGnwfbSiKOZINY/viewform?edit_requested=true">Feedback</NavDropdown.Item>
+            <NavDropdown.Item href="/feedback">Feedback</NavDropdown.Item>
           </NavDropdown>
 
         </Nav>
