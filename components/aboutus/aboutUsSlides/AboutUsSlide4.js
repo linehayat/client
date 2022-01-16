@@ -1,14 +1,6 @@
 import React from 'react';
-import image from '../../../public/About Us Page 4.svg';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 
-function AboutUsSlide2(props) {
-  // const languageContext = useContext(LanguageContext);
-  // let faq = faqJson.en;
-  // if (languageContext.language === 'my') {
-  //   faq = faqJson.my;
-  // }
+function AboutUsSlide2() {
   return (
     <div className="slide1ContentPositioning">
       <h2>What We Do:</h2>
@@ -39,7 +31,7 @@ function AboutUsSlide2(props) {
             <p>Anything that concerns you</p>
           </li>
         </ul>
-        <h4 style={{ fontSize: '35px' }}>#You Share, We Care</h4>
+        <h4>#You Share, We Care</h4>
       </div>
     </div>
   );

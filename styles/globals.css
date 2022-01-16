@@ -9360,7 +9360,6 @@ h3,
 h4,
 h5,
 h6 {
-  text-transform: uppercase;
   letter-spacing: 3px;
 }
 .text-secondary {
@@ -9590,32 +9589,31 @@ body {
 }
 
 h1 {
-  color: #5b4c43 !important;
+  color: #5b4c43;
   font-family: berkshireswash, sans-serif;
-  font-size: 1.5rem !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
+  font-size: 1.5rem;
+  letter-spacing: 0;
 }
 
 h2 {
-  color: #5b4c43 !important;
+  color: #5b4c43;
   font-family: crimsonfont, sans-serif;
-  font-size: 1.25rem !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
+  font-size: 1.25rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 h3 {
-  color: #5b4c43 !important;
-  text-transform: none !important;
+  color: #5b4c43;
+  text-transform: none;
 }
 
 h4 {
-  color: #5b4c43 !important;
+  color: #5b4c43;
   font-family: crimsonfont, sans-serif;
-  font-size: 1rem !important;
-  letter-spacing: 0 !important;
-  text-transform: none !important;
+  font-size: 1rem;
+  letter-spacing: 0;
+  text-transform: none;
 }
 
 p {
@@ -9760,26 +9758,8 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-.aboutus {
-  display: inline-block;
-
-  padding-bottom: 5vh;
-
-  text-align: justify;
-}
-
-.aboutus h1 {
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-
-.aboutus h2 {
+.aboutus h1, h2 {
   text-align: center;
-  font-size: 50px;
-  letter-spacing: 0px;
 }
 
 .aboutUsImg {
@@ -10023,6 +10003,13 @@ p {
 
 .slide1ContentPositioning > div {
   margin-bottom: 2rem;
+}
+
+
+
+
+main > div {
+  margin-bottom: 4rem;
 }
 
 .star-rating input {

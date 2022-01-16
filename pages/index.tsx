@@ -1,6 +1,9 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import HomeView from '../components/views/home/HomeView';
+
+import AboutUsComponent from '../components/aboutus/AboutUsComponent';
+import ContactComponent from '../components/contact/ContactComponent';
+import HomeCarouselComponent from '../components/homeCarousel/HomeCarouselComponent';
 
 const Home: NextPage = () => (
   <>
@@ -10,7 +13,9 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <HomeView />
+    <HomeCarouselComponent />
+    <AboutUsComponent />
+    <ContactComponent />
   </>
 );
 
