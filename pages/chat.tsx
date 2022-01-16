@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
 
+import { ChakraProvider } from '@chakra-ui/react';
+
 import ChatScreen from '../components/chat/ChatScreen';
 
 const Chat: NextPage = () => (
@@ -11,7 +13,9 @@ const Chat: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <ChatScreen />
+    <ChakraProvider>
+      <ChatScreen />
+    </ChakraProvider>
   </>
 );
 
