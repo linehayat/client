@@ -25,6 +25,7 @@ function Messages({ messages }: Props) {
           maxW="80%"
           alignSelf={message.sender === 'self' ? "flex-end" : "flex-start"}
           mb="4"
+          key={index}
         >
           <Text
             fontWeight="600"

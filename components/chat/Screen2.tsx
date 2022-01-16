@@ -3,7 +3,7 @@ import { VStack, HStack, Box, Button, Text, Checkbox, UnorderedList, OrderedList
 function Screen2() {
   return (
     <VStack h="full" w="full" px="2" justifyContent="center" fontFamily="printclearly" fontSize="1.25em" fontWeight="600" textAlign="center">
-        <Text mt={["2", "8"]} className="berkshire-font" fontWeight="400" fontSize={["1em", "1.25em"]} color="#5B4C43">How does LineHayat's anonymous chat support service work?</Text>
+        <Text mt={["2", "8"]} className="berkshire-font" fontWeight="400" fontSize={["1em", "1.25em"]} color="#5B4C43">How does LineHayat’s anonymous chat support service work?</Text>
         <HStack
           display="flex"
           flexDirection={["column", "row"]}
