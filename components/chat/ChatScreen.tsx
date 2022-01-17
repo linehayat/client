@@ -30,7 +30,7 @@ function ChatScreen() {
       </p>
       {currentScreen === 0 && <Screen1 />}
       {currentScreen === 1 && <Screen2 />}
-      {currentScreen === 2 && <TermsOfUse setUserAcceptsTermsOfUse={setUserAcceptsTermsOfUse} />}
+      {currentScreen === 2 && <TermsOfUse userAcceptsTermsOfUse={userAcceptsTermsOfUse} setUserAcceptsTermsOfUse={setUserAcceptsTermsOfUse} />}
       {currentScreen === 3 && <WaitingRoom />}
       {currentScreen === 4 && <Chat />}
       {0 < currentScreen && currentScreen < 3 && <button onClick={goToPreviousScreen}>Previous</button>}

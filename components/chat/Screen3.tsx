@@ -1,8 +1,9 @@
 interface Props {
+  userAcceptsTermsOfUse: boolean;
   setUserAcceptsTermsOfUse(userAcceptsTermsOfUse: boolean): void;
 }
 
-function TermsOfUse({ setUserAcceptsTermsOfUse }: Props) {
+function TermsOfUse({ userAcceptsTermsOfUse, setUserAcceptsTermsOfUse }: Props) {
   return (
     <div>
       <p>Terms of Use:</p>
@@ -22,7 +23,7 @@ function TermsOfUse({ setUserAcceptsTermsOfUse }: Props) {
           <li>We will never save session transcripts. All chats will be automatically deleted as the conversation ends.</li>
         </ol>
       </ol>
-      <input type="checkbox" onChange={(event) => setUserAcceptsTermsOfUse(event.target.checked)} />
+      <input type="checkbox" checked={userAcceptsTermsOfUse} onChange={(event) => setUserAcceptsTermsOfUse(event.target.checked)} />
       I agree with all the terms and conditions listed above.
     </div>
   );
