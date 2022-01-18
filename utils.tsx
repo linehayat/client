@@ -25,15 +25,6 @@ function requestChat() {
   (connection as WebSocket).onopen = () => {
     (connection as WebSocket).send(JSON.stringify({ type: 4 }));
   }
-  (connection as WebSocket).addEventListener('message', saveId);
-
-  function saveId({ data }: MessageEvent) {
-    data = JSON.parse(data);
-    if (data.type === 8) {
-      localStorage.setItem('id', data.userId);
-      (connection as WebSocket).removeEventListener('message', saveId);
-    }
-  }
 }
 
 function awaitResponse(onResponse: () => void) {
@@ -44,9 +35,14 @@ function awaitResponse(onResponse: () => void) {
 
   function handleResponse({ data }: MessageEvent) {
     data = JSON.parse(data);
-    if (data.type === 1) {
-      onResponse();
-      (connection as WebSocket).removeEventListener('message', handleResponse);
+    switch (data.type) {
+      case 1:
+        onResponse();
+        (connection as WebSocket).removeEventListener('message', handleResponse);
+        break;
+      case 8:
+        localStorage.setItem('id', data.userId);
+        break;
     }
   }
 }
