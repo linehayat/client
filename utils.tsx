@@ -40,11 +40,13 @@ function awaitResponse(onResponse: () => void) {
   if (connection === null) {
     throw 'connection is null';
   }
-  connection.onmessage = ({ data }) => {
+  (connection as WebSocket).addEventListener('message', handleResponse);
+
+  function handleResponse({ data }: MessageEvent) {
     data = JSON.parse(data);
     if (data.type === 1) {
       onResponse();
-      (connection as WebSocket).onmessage = null;
+      (connection as WebSocket).removeEventListener('message', handleResponse);
     }
   }
 }
@@ -53,7 +55,9 @@ function handleChatEvents({ onNewMessage, onChatEnd }: ChatEventCallbacks) {
   if (connection === null) {
     throw 'connection is null';
   }
-  connection.onmessage = ({ data }) => {
+  (connection as WebSocket).addEventListener('message', handleChatEvent);
+
+  function handleChatEvent({ data }: MessageEvent) {
     data = JSON.parse(data);
     switch (data.type) {
       case 2:
@@ -61,6 +65,7 @@ function handleChatEvents({ onNewMessage, onChatEnd }: ChatEventCallbacks) {
         break;
       case 6:
         onChatEnd();
+        (connection as WebSocket).removeEventListener('message', handleChatEvent);
         break;
     }
   }
