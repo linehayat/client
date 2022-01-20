@@ -1,20 +1,25 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+
+import useLocalStorage from '../../hooks/useLocalStorage';
 import { handleChatEvents, sendMessage, endChat } from '../../utils';
 import Modal from '../Modal';
 import Messages from './Messages';
 
 function Chat() {
   const [messageInputText, setMessageInputText] = useState('');
-  const [messages, setMessages] = useState([] as string[]);
+  const [messages, setMessages] = useLocalStorage('messages', [] as string[]);
   const [isChatEndModalOpen, setIsChatEndModalOpen] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
     handleChatEvents({
       onNewMessage: (newMessage) => setMessages((messages) => [...messages, newMessage]),
-      onChatEnd: () => setIsChatEndModalOpen(true),
+      onChatEnd: () => {
+        localStorage.clear();
+        setIsChatEndModalOpen(true);
+      },
     });
   }, []);
 
@@ -26,6 +31,7 @@ function Chat() {
         </p>
         <button onClick={() => {
           endChat();
+          localStorage.clear();
           router.push('/feedback');
         }}>End chat</button>
         <Messages messages={messages} />
