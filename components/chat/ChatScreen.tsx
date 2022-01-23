@@ -40,7 +40,7 @@ function ChatScreen() {
       >
         {currentScreen === 0 && <Screen1 />}
         {currentScreen === 1 && <Screen2 />}
-        {currentScreen === 2 && <TermsOfUse setUserAcceptsTermsOfUse={setUserAcceptsTermsOfUse} />}
+        {currentScreen === 2 && <TermsOfUse userAcceptsTermsOfUse={userAcceptsTermsOfUse} setUserAcceptsTermsOfUse={setUserAcceptsTermsOfUse} />}
         {currentScreen === 3 && <WaitingRoom />}
         {currentScreen === 4 && <Chat />}
         {currentScreen < 4 &&

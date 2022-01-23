@@ -1,10 +1,11 @@
 import { VStack, HStack, Box, Button, Text, Checkbox, UnorderedList, OrderedList, ListItem, Image } from '@chakra-ui/react';
 
 interface Props {
+  userAcceptsTermsOfUse: boolean;
   setUserAcceptsTermsOfUse(userAcceptsTermsOfUse: boolean): void;
 }
 
-function TermsOfUse({ setUserAcceptsTermsOfUse }: Props) {
+function TermsOfUse({ userAcceptsTermsOfUse, setUserAcceptsTermsOfUse }: Props) {
   return (
     <VStack h="full" w="full" px="2" pt="4" justifyContent="center" fontFamily="printclearly" fontSize="1.25em" fontWeight="600" textAlign="center" overflow="auto">
       <Text className="berkshire-font" fontWeight="400" color="#5B4C43" fontSize={["1em", "1.25em"]}>Terms of Use</Text>
@@ -25,7 +26,7 @@ function TermsOfUse({ setUserAcceptsTermsOfUse }: Props) {
             <ListItem>We will never save session transcripts. All chats will be automatically deleted when the conversation ends.</ListItem>
           </OrderedList>
         </OrderedList>
-          <input type="checkbox" onChange={(event) => setUserAcceptsTermsOfUse(event.target.checked)} />
+          <input type="checkbox" checked={userAcceptsTermsOfUse} onChange={(event) => setUserAcceptsTermsOfUse(event.target.checked)} />
           I agree with all the terms and conditions listed above.
       </Box>
     </VStack>
