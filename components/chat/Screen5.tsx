@@ -3,6 +3,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { Box, Text, Textarea, HStack, Button } from "@chakra-ui/react";
 
+import useLocalStorage from '../../hooks/useLocalStorage';
 import { handleChatEvents, sendMessage, endChat } from '../../utils';
 import Modal from '../Modal';
 import Messages from './Messages';
@@ -15,7 +16,7 @@ interface Message {
 
 function Chat() {
   const [messageInputText, setMessageInputText] = useState('');
-  const [messages, setMessages] = useState([] as Message[]);
+  const [messages, setMessages] = useLocalStorage('messages', [] as Message[]);
   const [isChatEndModalOpen, setIsChatEndModalOpen] = useState(false);
   const router = useRouter();
 
@@ -26,7 +27,10 @@ function Chat() {
         sender: 'other',
         text: newMessage,
       }]),
-      onChatEnd: () => setIsChatEndModalOpen(true),
+      onChatEnd: () => {
+        localStorage.clear();
+        setIsChatEndModalOpen(true);
+      },
     });
   }, []);
 
@@ -45,6 +49,7 @@ function Chat() {
             borderRadius="100px"
             onClick={() => {
               endChat();
+              localStorage.clear();
               router.push('/feedback');
             }}
             boxShadow="md"
