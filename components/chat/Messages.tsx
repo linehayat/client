@@ -31,7 +31,7 @@ function Messages({ messages }: Props) {
             fontWeight="600"
             textAlign={message.sender === 'self' ? "right" : "left"}
             fontFamily="printclearly"
-            fontSize="1em">{message.receivedAt.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</Text>
+            fontSize="1em">{new Date(message.receivedAt).toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' })}</Text>
           <Box
             rounded="md"
             w="100%"

@@ -1,7 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Link from 'next/link';
 import { VStack, HStack, Box, Button, Text, Checkbox, UnorderedList, OrderedList, ListItem, Image } from '@chakra-ui/react';
 
-import { closeConnection, requestChat, awaitResponse } from '../../utils';
+import Modal from '../Modal';
+import { closeConnection, requestChat, awaitResponse, reconnect } from '../../utils';
 import Screen1 from './Screen1';
 import Screen2 from './Screen2';
 import TermsOfUse from './Screen3';
@@ -11,6 +13,25 @@ import Chat from './Screen5';
 function ChatScreen() {
   const [currentScreen, setCurrentScreen] = useState(0);
   const [userAcceptsTermsOfUse, setUserAcceptsTermsOfUse] = useState(false);
+  const [isChatEndedModalOpen, setIsChatEndedModalOpen] = useState(false);
+
+  useEffect(() => {
+    const id = localStorage.getItem('id');
+    const isChatting = localStorage.getItem('chatting');
+    if (id && isChatting) {
+      fetch(`${process.env.NEXT_PUBLIC_API}/can_student_reconnect/${id}`)
+      .then(response => response.json())
+      .then(({ canReconnect }) => {
+        if (canReconnect) {
+          setCurrentScreen(4);
+          reconnect();
+        } else {
+          localStorage.clear();
+          setIsChatEndedModalOpen(true);
+        }
+      });
+    }
+  }, []);
 
   function goToPreviousScreen() {
     if (0 < currentScreen) {
@@ -54,17 +75,27 @@ function ChatScreen() {
             {0 < currentScreen && currentScreen < 3 && <Button onClick={goToPreviousScreen} bgColor="#F3F3F3" borderRadius={"99rem"} color="#5B4C43" boxShadow="md">Previous</Button>}
             {currentScreen === 3 && <Button onClick={() => {
               closeConnection('student canceled chat request');
+              localStorage.clear();
               goToPreviousScreen();
             }} bgColor="#F3F3F3" borderRadius={"99rem"} color="#5B4C43" boxShadow="md">Cancel chat</Button>}
             {currentScreen < 2 && <Button onClick={goToNextScreen} bgColor="#FFFAE7" borderRadius={"99rem"} color="#5B4C43" boxShadow="md" marginLeft={"auto"}>Next</Button>}
             {currentScreen === 2 && <Button onClick={() => {
               goToNextScreen();
               requestChat();
-              awaitResponse(goToNextScreen);
+              awaitResponse(() => {
+                goToNextScreen();
+                localStorage.setItem('chatting', 'true');
+              });
             }} disabled={!userAcceptsTermsOfUse} bgColor="#FFFAE7" borderRadius={"99rem"} color="#5B4C43" boxShadow="md">Chat</Button>}
           </HStack>
         }
       </VStack>
+      {isChatEndedModalOpen && <Modal>
+        <div>
+          <p>Chat ended</p>
+          <Link href="/feedback">Leave feedback</Link>
+        </div>
+      </Modal>}
     </div>
   );
 }

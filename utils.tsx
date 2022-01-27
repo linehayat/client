@@ -47,6 +47,19 @@ function awaitResponse(onResponse: () => void) {
   }
 }
 
+function reconnect() {
+  openConnection();
+  (connection as WebSocket).onopen = () => {
+    (connection as WebSocket).send(JSON.stringify({
+      metadata: {
+        identity: localStorage.getItem('id'),
+        type: 'student',
+      },
+      type: 5,
+    }));
+  }
+}
+
 function handleChatEvents({ onNewMessage, onChatEnd }: ChatEventCallbacks) {
   if (connection === null) {
     throw 'connection is null';
@@ -96,4 +109,4 @@ function endChat() {
   }));
 }
 
-export { closeConnection, requestChat, awaitResponse, handleChatEvents, sendMessage, endChat };
+export { closeConnection, requestChat, awaitResponse, reconnect, handleChatEvents, sendMessage, endChat };
