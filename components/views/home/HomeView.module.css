@@ -1,0 +1,14 @@
+.homeView{
+    background-image: linear-gradient(#FEFAF0, #F7ECD2);
+    text-align: center;
+}
+
+.homeView > div{
+    padding: 0 1rem;
+}
+
+@media (min-width: 768px){
+    .homeView > div{
+        padding: 0 20%;
+    }
+}
