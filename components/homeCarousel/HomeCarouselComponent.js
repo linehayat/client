@@ -1,4 +1,5 @@
 import React from "react";
+import styles from './HomeCarouselComponent.module.css';
 import Carousel from "react-bootstrap/Carousel";
 import Button from "react-bootstrap/Button";
 import Container from "react-bootstrap/Container";
@@ -8,7 +9,7 @@ import Image from "react-bootstrap/Image";
 
 function HomeCarouselComponent() {
   return (
-    <div>
+    <div className={styles.home_carousel}>
       <div className="carouselContainer">
         <Carousel className="carousel" controls="false" indicators="false">
           <Carousel.Item className="carouselItem">

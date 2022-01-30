@@ -83,10 +83,6 @@ body {
   outline: 0 !important;
 }
 
-main > * {
-  padding: 0 1rem;
-}
-
 hr {
   box-sizing: content-box;
   height: 0;
@@ -513,10 +509,6 @@ pre code {
   }
 }
 @media (min-width: 768px) {
-  main > * {
-    padding: 0 20%;
-  }
-
   .container,
   .container-md,
   .container-sm {
@@ -9576,10 +9568,6 @@ code {
   text-shadow: 0 0.25rem 0.5rem #00000029 !important;
 }
 
-body {
-  background-image: linear-gradient(#fefaf0, #f7ecd2);
-}
-
 .berkshire-font {
   font-family: berkshireswash, sans-serif !important;
 }
@@ -9758,7 +9746,7 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-.aboutus h1, h2 {
+.aboutus h1, .aboutus h2 {
   text-align: center;
 }
 
@@ -10003,13 +9991,6 @@ p {
 
 .slide1ContentPositioning > div {
   margin-bottom: 2rem;
-}
-
-
-
-
-main > div {
-  margin-bottom: 4rem;
 }
 
 .star-rating input {
