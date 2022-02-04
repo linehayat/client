@@ -14,7 +14,7 @@ function AboutUsSlide3(props) {
       <h2>Who We Are Not:</h2>
       <div>
         <p>
-          Line Hayat is not a counselling or a professional mental health
+          LineHayat is not a counselling or a professional mental health
           service.
         </p>
         <p>
@@ -23,7 +23,7 @@ function AboutUsSlide3(props) {
           workers.
         </p>
         <p>We are volunteers that provide only emotional support.</p>
-        <p>Users should always seek professional help if possible.</p>
+        <p>Sharers should always seek professional help if possible.</p>
       </div>
     </div>
   );

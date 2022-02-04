@@ -3,7 +3,7 @@ import FAQComponent from "../../faq/FAQComponent";
 
 function FaqView(props) {
     return (
-        <div>
+        <div className="p-4">
             <FAQComponent/>
         </div>
     )

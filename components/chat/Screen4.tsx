@@ -7,13 +7,12 @@ function WaitingRoom() {
         h="full" w="full"
         px="2"
         fontSize="1.25em" fontFamily="Print Clearly" fontWeight="600" textAlign="center"
-        overflow="auto"
       >
-        <Box h="140px" overflowY="hidden" marginTop={["0", "-48px"]}>
+        <Box h="140px">
           <Image
             src="/phone-call.gif"
             h="320px"
-            marginTop="-100px"
+            marginTop="-90px"
             objectFit="scale-down"
           />
         </Box>
@@ -26,7 +25,7 @@ function WaitingRoom() {
           <Text>I will reach out to you soon. Thank you for your patience.</Text>
 
           <Text>While waiting, I would like to tell you:</Text>
-          <UnorderedList w={["auto", "480px"]} px="4" textAlign="left" fontFamily="printclearly">
+          <UnorderedList px="4" textAlign="left" fontFamily="printclearly">
             <ListItem>Feel free to share your feelings and thoughts.</ListItem>
             <ListItem>Talk at your own pace and willingness.</ListItem>
             <ListItem>It’s okay to stay silent if you want to gather your thoughts.</ListItem>

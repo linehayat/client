@@ -1,19 +1,19 @@
-import React from "react";
-import Carousel from "react-bootstrap/Carousel";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
-import Image from "react-bootstrap/Image";
+import React from 'react';
+import Carousel from 'react-bootstrap/Carousel';
+import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Image from 'react-bootstrap/Image';
 
 function HomeCarouselComponent() {
   return (
-    <div>
+    <>
       <div className="carouselContainer">
-        <Carousel className="carousel" controls="false" indicators="false">
+        <Carousel className="carousel py-2" controls="false" indicators="false">
           <Carousel.Item className="carouselItem">
             <div className="firstItem">
-              <h4 className="mb-lg-5 crimson-font">
+              <h4 className="mb-lg-3 crimson-font">
                 LineHayat Is Your Friendly And Private Platform To Lend You An
                 Ear.
               </h4>
@@ -28,27 +28,25 @@ function HomeCarouselComponent() {
                 all students throughout these challenging days.
               </p>
               <p>
-                With LineHayat, your privacy is protected. You can express
-                yourself freely and anonymously to our Listening Volunteers via
-                Call or Live Chat on our website.
+                With LineHayat, your privacy is protected. You can express yourself freely and anonymously to our Listening Volunteers via Live Chat on our website. Currently, our Call service is still being built.
               </p>
               <p>We are always here to listen!</p>
-              <p style={{ color: "#5B4C43" }}>#YouShareWeCare</p>
+              <p style={{ color: '#5B4C43' }}>#YouShareWeCare</p>
               <p className="highlight">Operation hours to be confirmed</p>
             </div>
           </Carousel.Item>
           <Carousel.Item className="carouselItem">
             <div className="secondItemContainer">
-              <Container fluid style={{ height: "100%" }}>
+              <Container fluid style={{ height: '100%' }}>
                 <Row>
                   <Col sm={12} xs={12} md={12} lg={12}>
-                    <h4 className="berkshire-font mb-5">
+                    <h4 className="berkshire-font mb-3 text-center">
                       LineHayat Anonymous Chat Service - How it Works?
                     </h4>
                   </Col>
                 </Row>
                 <Row>
-                  <Col sm={12} xs={12} md={12} lg={4}>
+                  <Col sm={12} xs={12} md={4} lg={4} className="text-center">
                     <Image
                       layout="fill"
                       src="/carousel-live-chat-click.svg"
@@ -56,7 +54,7 @@ function HomeCarouselComponent() {
                     />
                     <p>Click the ‘Live Chat’ button.</p>
                   </Col>
-                  <Col sm={12} xs={12} md={12} lg={4}>
+                  <Col sm={12} xs={12} md={4} lg={4} className="text-center">
                     <Image
                       layout="fill"
                       src="/carousel-wait.svg"
@@ -67,7 +65,7 @@ function HomeCarouselComponent() {
                       Volunteer shortly.
                     </p>
                   </Col>
-                  <Col sm={12} xs={12} md={12} lg={4}>
+                  <Col sm={12} xs={12} md={4} lg={4} className="text-center">
                     <Image
                       layout="fill"
                       src="/carousel-chat-room.svg"
@@ -81,8 +79,8 @@ function HomeCarouselComponent() {
           </Carousel.Item>
         </Carousel>
       </div>
-      <Container style={{ height: "100%", width: "fit-content" }}>
-        <Row style={{ width: "fit-content", marginRight: "0" }}>
+      <Container style={{ height: '100%', width: 'fit-content', marginBottom: '4rem' }}>
+        <Row style={{ width: 'fit-content', marginRight: '0' }}>
           <Col sm={12} xs={12} md={12} lg={6}>
             <Button variant="primary" href="/chat" className="buttonHome">
               Live Chat
@@ -90,7 +88,7 @@ function HomeCarouselComponent() {
           </Col>
         </Row>
       </Container>
-    </div>
+    </>
   );
 }
 

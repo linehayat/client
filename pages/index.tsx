@@ -13,9 +13,11 @@ const Home: NextPage = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
 
-    <HomeCarouselComponent />
-    <AboutUsComponent />
-    <ContactComponent />
+    <div className="p-4">
+      <HomeCarouselComponent />
+      <AboutUsComponent />
+      <ContactComponent />
+    </div>
   </>
 );
 

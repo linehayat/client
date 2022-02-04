@@ -16,7 +16,7 @@ function FeedbackForm() {
   return (
     <div>
       <HStack w={['90%', '70%']}>
-        <Image src="/chat-bubbles.svg" w="14" mr="4" />
+        <Image src="/chat-bubbles.svg" w="14" mx="4" />
         <Text
           className="berkshire-font"
           fontWeight="400"
@@ -35,7 +35,7 @@ function FeedbackForm() {
             const formData = Object.fromEntries(
               new FormData(event.target as HTMLFormElement).entries()
             );
-            if (!formData.hasOwnProperty('rating')) {
+            if (!Object.prototype.hasOwnProperty.call(formData, 'rating')) {
               setIsRatingValid(false);
             } else {
               fetch('/api/feedback', {
@@ -92,6 +92,7 @@ function FeedbackForm() {
               display={isRatingValid ? 'none' : ''}
               textAlign={'center'}
               color={'#bf3f3f'}
+              style={{ marginTop: "-0.5rem" }}
             >
               Please rate the chat session
             </Text>

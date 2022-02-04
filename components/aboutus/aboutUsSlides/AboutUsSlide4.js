@@ -5,14 +5,11 @@ function AboutUsSlide2() {
     <div className="slide1ContentPositioning">
       <h2>What We Do:</h2>
       <div>
-        <p>
-          We are always here to lend a listening ear on for whatever you may
-          be facing right now. We listen.
-        </p>
-        <p>Feel free to reach us through our call or chat services.</p>
+        <p>We are always here to lend a listening ear on for whatever you may be facing right now.</p>
+        <p>Feel free to reach us through our Live Chat service.</p>
         <p>You may want to talk about:</p>
         <ul
-          style={{ width: 'fit-content', textAlign: 'left' }}
+          style={{ width: 'fit-content', textAlign: 'left', paddingLeft: '1rem' }}
           className="crimson-font highlight"
         >
           <li style={{ width: 'fit-content' }}>

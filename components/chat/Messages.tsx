@@ -19,7 +19,7 @@ function Messages({ messages }: Props) {
   }, [messages]);
 
   return (
-    <VStack flexGrow={1} overflowY="auto" maxHeight="calc(100vh - 11.5rem - 101px)" p="2" spacing={1} ref={chatListRef}>
+    <VStack flexGrow={1} overflowY="auto" minHeight="calc(100vh - 11.5rem - 101px)" maxHeight="calc(100vh - 11.5rem - 101px)" p="2" spacing={1} ref={chatListRef}>
       {messages.map((message, index) => (
         <Box
           maxW="80%"

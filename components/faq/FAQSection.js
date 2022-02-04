@@ -77,11 +77,8 @@ function FAQSection(props) {
                   />
                 )}
               </CustomToggle>
-              <Accordion.Collapse
-                eventKey={index.toString()}
-                style={{ border: 'none !important' }}
-              >
-                <Card.Body style={{ border: 'none !important' }}>
+              <Accordion.Collapse eventKey={index.toString()}>
+                <Card.Body className="text-justify">
                   {question.answerText}
                 </Card.Body>
               </Accordion.Collapse>

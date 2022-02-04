@@ -14,8 +14,8 @@ function AboutUsSlide2(props) {
       <h2>Who We Are:</h2>
       <div>
         <p>
-          LineHayat is a Listening Service that aims to provide peer support
-          to Universiti Sains Malaysia (USM) students.
+          LineHayat is a Listening Service that aims to provide peer support to
+          Universiti Sains Malaysia (USM) students.
         </p>
         <p>
           This service is run by students for students to ensure comfortable
@@ -27,7 +27,7 @@ function AboutUsSlide2(props) {
         </p>
         <p>Therefore, we are established on these three main ideas:</p>
         <ul
-          style={{ width: 'fit-content', textAlign: 'center' }}
+          style={{ width: 'fit-content', textAlign: 'left' }}
           className="whoWeAreList crimson-font highlight"
         >
           <li style={{ width: 'fit-content' }}>

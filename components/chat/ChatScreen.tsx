@@ -48,13 +48,13 @@ function ChatScreen() {
   return (
     <div>
       <HStack w={["90%", "70%"]}>
-        <Image src="/chat-bubbles.svg" w="14" mr="4" />
+        <Image src="/chat-bubbles.svg" w="14" mx="4" />
         <Text className="berkshire-font" fontWeight="400" fontSize="1.25em" color="#5B4C43">
           LineHayat Live Chat
         </Text>
       </HStack>
       <VStack
-        w="100%" h="100%"
+        height="100%"
         spacing={0}
         bgColor="#CFDED7"
         rounded="xl"
@@ -71,6 +71,7 @@ function ChatScreen() {
             flexBasis="40px"
             fontFamily={"Quicksand"}
             justifyContent="space-between"
+            boxSizing="border-box"
           >
             {0 < currentScreen && currentScreen < 3 && <Button onClick={goToPreviousScreen} bgColor="#F3F3F3" borderRadius={"99rem"} color="#5B4C43" boxShadow="md">Previous</Button>}
             {currentScreen === 3 && <Button onClick={() => {

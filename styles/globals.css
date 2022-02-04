@@ -83,10 +83,6 @@ body {
   outline: 0 !important;
 }
 
-main > * {
-  padding: 0 1rem;
-}
-
 hr {
   box-sizing: content-box;
   height: 0;
@@ -513,10 +509,6 @@ pre code {
   }
 }
 @media (min-width: 768px) {
-  main > * {
-    padding: 0 20%;
-  }
-
   .container,
   .container-md,
   .container-sm {
@@ -9460,7 +9452,7 @@ th {
   border-radius: 30px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .navbar {
     padding: 0.5rem 0.5rem !important;
   }
@@ -9470,7 +9462,7 @@ th {
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .navbar-brand {
     margin-right: 0 !important;
   }
@@ -9758,7 +9750,7 @@ p {
   -webkit-font-smoothing: antialiased;
 }
 
-.aboutus h1, h2 {
+.aboutus h1, .aboutus h2 {
   text-align: center;
 }
 
@@ -9781,9 +9773,7 @@ p {
 
 .whoWeAreList {
   width: fit-content;
-  margin-left: auto !important;
-  margin-right: auto !important;
-
+  margin-left: 1rem;
   padding: 0;
 }
 
@@ -9792,18 +9782,6 @@ p {
   color: #5b4c43;
   text-shadow: #5b4c43 0px 0px 1px;
   -webkit-font-smoothing: antialiased;
-}
-
-@media (max-width: 700px) {
-  .aboutus {
-    width: 80%;
-  }
-}
-
-@media (min-width: 701px) {
-  .aboutus {
-    width: 100%;
-  }
 }
 
 .contactView {
@@ -9822,28 +9800,6 @@ p {
 
 .socialsIcon {
   margin-right: 2vw;
-}
-
-@media (max-width: 700px) {
-  .contactView {
-    width: 80%;
-  }
-
-  .socialsIcon {
-    width: 30px !important;
-    height: 30px !important;
-  }
-}
-
-@media (min-width: 701px) {
-  .contactView {
-    width: 100%;
-  }
-
-  .socialsIcon {
-    width: 80px !important;
-    height: 80px !important;
-  }
 }
 
 .faq-card {
@@ -9884,7 +9840,7 @@ p {
   max-height: 1rem;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 768px) {
   .carousel {
     width: 90vw;
   }
@@ -9901,10 +9857,7 @@ p {
   }
 
   .secondItemImage {
-    margin-bottom: 0.5em;
-    border-radius: 5em;
-    width: 10em;
-    height: 10em;
+    max-height: 12rem;
   }
 
   .firstItem {
@@ -9919,7 +9872,12 @@ p {
 /*.carousel-control-next {visibility: hidden;}*/
 /*.carousel-control-prev {visibility: hidden;}*/
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
+  main > *, .p-4 {
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+  }
+  
   .carousel {
     width: 65vw;
     background: transparent
@@ -9943,12 +9901,6 @@ p {
     justify-content: space-between;
     margin-top: 5vh;
     height: fit-content;
-  }
-
-  .secondItemImage {
-    border-radius: 7.5em;
-    width: 15em;
-    height: 15em;
   }
 }
 
@@ -10009,7 +9961,7 @@ p {
 
 
 main > div {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 }
 
 .star-rating input {

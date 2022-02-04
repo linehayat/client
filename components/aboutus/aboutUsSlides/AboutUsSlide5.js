@@ -22,7 +22,7 @@ function AboutUsSlide3(props) {
         </p>
         <p>
           Everything is{' '}
-          <span className="highlight">confidential and anonymous.</span>
+          <span className="highlight">confidential and anonymous</span>
         </p>
       </div>
     </div>
