@@ -18,6 +18,7 @@ function Chat() {
   const [messageInputText, setMessageInputText] = useState('');
   const [messages, setMessages] = useLocalStorage('messages', [] as Message[]);
   const [isChatEndModalOpen, setIsChatEndModalOpen] = useState(false);
+  const [isErrorMessageVisible, setIsErrorMessageVisible] = useState(false);
   const router = useRouter();
 
   useEffect(() => {
@@ -58,6 +59,12 @@ function Chat() {
           </Button>
         </HStack>
         <Messages messages={messages} />
+        {isErrorMessageVisible && <>
+          <Text textAlign={'center'} color={'#bf3f3f'}>
+            Oops, something went wrong! Please refresh the page
+          </Text>
+          <Text textAlign={'center'} fontSize='1em'>Copy your message to avoid retyping it</Text>
+        </>}
         <HStack h={["100px", "100px"]}
           rounded="xl"
           borderTopLeftRadius="0"
@@ -80,13 +87,17 @@ function Chat() {
           />
           <button onClick={() => {
             if (messageInputText) {
-              sendMessage(messageInputText);
-              setMessages((messages) => [...messages, {
-                receivedAt: new Date(),
-                sender: 'self',
-                text: messageInputText,
-              }]);
-              setMessageInputText('');
+              try {
+                sendMessage(messageInputText);
+                setMessages((messages) => [...messages, {
+                  receivedAt: new Date(),
+                  sender: 'self',
+                  text: messageInputText,
+                }]);
+                setMessageInputText('');
+              } catch {
+                setIsErrorMessageVisible(true);
+              }
             }
           }}>
             <img src="/send-message.svg" alt="Send message" />
