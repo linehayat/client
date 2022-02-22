@@ -11,8 +11,9 @@ function AboutUsSlide2(props) {
   // }
   return (
     <div className="slide1ContentPositioning">
-      <h2>Who We Are:</h2>
+      <img src="/space-boy.svg" alt="Space boy" />
       <div>
+        <h2>Who We Are:</h2>
         <p>
           LineHayat is a Listening Service that aims to provide peer support to
           Universiti Sains Malaysia (USM) students.

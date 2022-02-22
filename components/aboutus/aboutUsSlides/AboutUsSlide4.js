@@ -3,8 +3,9 @@ import React from 'react';
 function AboutUsSlide2() {
   return (
     <div className="slide1ContentPositioning">
-      <h2>What We Do:</h2>
+      <img src="/listening-ear.svg" alt="Listening ear" id="listeningEar" />
       <div>
+        <h2>What We Do:</h2>
         <p>We are always here to lend a listening ear on for whatever you may be facing right now.</p>
         <p>Feel free to reach us through our Live Chat service.</p>
         <p>You may want to talk about:</p>

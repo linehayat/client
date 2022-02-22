@@ -11,8 +11,9 @@ function AboutUsSlide3(props) {
   // }
   return (
     <div className="slide1ContentPositioning">
-      <h2>Who We Are Not:</h2>
+      <img src="/space-girl.svg" alt="Space girl" />
       <div>
+        <h2>Who We Are Not:</h2>
         <p>
           LineHayat is not a counselling or a professional mental health
           service.

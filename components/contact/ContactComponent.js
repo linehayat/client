@@ -4,7 +4,8 @@ import Button from 'react-bootstrap/Button';
 
 function ContactComponent() {
   return (
-    <div className="contactView">
+    <div className="contactView" style={{ textAlign: "center" }}>
+      <img src="/paper-plane.svg" alt="Paper plane" style={{ marginBottom: "2rem", maxWidth: "30rem", width: "100%" }} />
       <h1 id="contact" className="mb-4 text-center">Get Connected</h1>
       <div className="mb-4 text-center">
         <p>We would love to hear from you!</p>

@@ -11,8 +11,9 @@ function AboutUsSlide3(props) {
   // }
   return (
     <div className="slide1ContentPositioning">
-      <h2>What To Expect:</h2>
+      <img src="/no-judging.svg" alt="No judging" />
       <div style={{ textAlign: 'center' }}>
+        <h2>What To Expect:</h2>
         <p>You are ensured that:</p>
         <p>
           We <span className="highlight">don’t judge</span>
