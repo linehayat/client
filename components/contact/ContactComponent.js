@@ -16,7 +16,7 @@ function ContactComponent() {
           <tr>
             <td>
               <a href="https://www.instagram.com/linehayat_usm">
-                <img className="socialsIcon" src="/igIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem" }} />
+                <img className="socialsIcon" src="/igIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem", minWidth: "3rem", maxWidth: "3rem" }} />
                 {/*<i className="fab fa-instagram socialsIcon"></i>*/}
               </a>
             </td>
@@ -29,7 +29,7 @@ function ContactComponent() {
           <tr>
             <td>
               <a href="https://www.linkedin.com/company/linehayatusm/">
-                <img className="socialsIcon" src="/linkedInIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem" }} />
+                <img className="socialsIcon" src="/linkedInIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem", minWidth: "3rem", maxWidth: "3rem" }} />
                 {/*<i className="fab fa-linkedin socialsIcon"></i>*/}
               </a>
             </td>
@@ -42,7 +42,7 @@ function ContactComponent() {
           <tr>
             <td>
               <a href="https://www.facebook.com/linehayat.usm">
-                <img className="socialsIcon" src="/fbIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem" }} />
+                <img className="socialsIcon" src="/fbIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem", minWidth: "3rem", maxWidth: "3rem" }} />
               </a>
             </td>
             <td>
@@ -54,7 +54,7 @@ function ContactComponent() {
           <tr>
             <td>
               <a href="mailto:linehayat@usm.my">
-                <img className="socialsIcon" src="/emailIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem" }} />
+                <img className="socialsIcon" src="/emailIcon.svg" style={{ minHeight: "3rem", maxHeight: "3rem", minWidth: "3rem", maxWidth: "3rem" }} />
                 {/*<i className="far fa-envelope socialsIcon"></i>*/}
               </a>
             </td>

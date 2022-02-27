@@ -72,6 +72,7 @@ function ChatScreen() {
             fontFamily={"Quicksand"}
             justifyContent="space-between"
             boxSizing="border-box"
+            style={{ paddingTop: "20px", paddingBottom: "20px" }}
           >
             {0 < currentScreen && currentScreen < 3 && <Button onClick={goToPreviousScreen} bgColor="#F3F3F3" borderRadius={"99rem"} color="#5B4C43" boxShadow="md">Previous</Button>}
             {currentScreen === 3 && <Button onClick={() => {
