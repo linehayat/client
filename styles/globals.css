@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  font-size: 1.25rem;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
@@ -13,4 +14,29 @@ a {
 
 * {
   box-sizing: border-box;
+  margin: 0;
 }
+
+:root {
+  /* Background Gradient */
+  --gradient-background: linear-gradient(#fefaf0,#f7ecd2);
+
+  /* Text Styling */
+  /*--crimson-font: ;*/
+
+  /* Colors */
+  --brown: #846859;
+  --dark-brown: #5b4c43;
+  --gray: #F3F3F3;
+}
+
+@font-face {
+  font-family: 'printclearly';
+  src: url('./fonts/print_clearly_bold_tt.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'crimsonfont';
+  src: url('./fonts/Crimson-Bold.otf') format('opentype');
+}
+

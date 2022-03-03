@@ -1,0 +1,24 @@
+.main{
+    background-color: var(--gray);
+    padding: 50px 4rem 100px 4rem;
+}
+
+/* Mobile */
+@media screen and (max-width: 725px){
+    .main{
+        padding: 50px 2.5rem 100px 2.5rem;
+    }
+}
+
+.main > div > h2{
+    font-family: crimsonfont,sans-serif;
+    font-size: 1.25rem;
+    color: var(--dark-brown);
+  }
+
+.main > div > p{
+    font-family: printclearly;
+    font-size: 1.125rem;
+    color: var(--brown);
+    margin-bottom: 30px;
+}
