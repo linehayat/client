@@ -90,7 +90,7 @@ function HeaderComponent(props) {
                 {languageContext.content.header.getConnected}
               </NavDropdown.Item>
               <NavDropdown.Item
-                href="https://docs.google.com/forms/d/1sS2esF4vrfVe9bhoo0TBOn4rrPTSpCGnwfbSiKOZINY/viewform?edit_requested=true"
+                href="https://docs.google.com/forms/d/e/1FAIpQLSddwiLsi33C9DVywdAixOk2s7laSc91M7WXfpjYH2cLZtju2w/viewform"
               >
                 {languageContext.content.header.feedback}
               </NavDropdown.Item>
