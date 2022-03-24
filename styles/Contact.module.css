@@ -2,9 +2,15 @@
     text-align: center;
 }
 
+.connect{
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--dark-brown);
+}
+
 .paperPlane{
-    margin-bottom: 60px;
+    margin-top: 60px;
     width: 80%;
+    max-height: 150px;
 } 
 
 .contact p{
@@ -22,13 +28,22 @@
 .socials{
     display: flex;
     justify-content: space-evenly;
+    max-width: 1000px;
+    margin: auto;
     margin-bottom: 50px;
 }
 
 .socials a{
-    height: 100px;
+    height: 50px;
 }
 
 .socials img{
     height: 100%;
+}
+
+/* Desktop */
+@media screen and (min-width: 725px){
+    .socials a{
+        height: 75px;
+    }
 }

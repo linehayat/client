@@ -5,7 +5,6 @@ import faqJson from '../../assets/json/faq.json';
 function FAQComponent() {
   let faq = faqJson.en;
   const questionOutput = (questions : any) => {
-    console.log(questions[0]);
     return questions.map(question => (
       <div key={"Q" + question.questionText} className={styles.qna}>
         <li className={styles.question}>{question.questionText}</li>
@@ -13,9 +12,6 @@ function FAQComponent() {
       </div>
     ))
   }
-
-  questionOutput(faq.questions.general);
-
   return (
     <div className={styles.faq}>
       <h1>Frequently Asked Questions</h1>

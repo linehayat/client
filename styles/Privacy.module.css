@@ -1,15 +1,32 @@
 .privacy{
     background-color: var(--gray);
-    padding: 50px 4rem 100px 4rem;
+    padding: 50px 20px 100px 20px;
 }
 
-/* Mobile */
-@media screen and (max-width: 725px){
-    .privacy{
-        padding: 50px 2.5rem 100px 2.5rem;
-    }
+.privacy h1{
+    text-align: center;
 }
 
-.privacy > div > p{
+.subHead{
+    text-align: center;
+    font: normal normal 700 1.125rem/1.25em printclearly;
+    color: var(--brown);
     margin-bottom: 30px;
+}
+
+.privacy h2{
+    border-bottom: 1px solid var(--dark-brown);
+    margin-bottom: 10px;
+}
+
+.privacy div p{
+    margin-bottom: 30px;
+    padding-left: 10px;
+}
+
+/* Desktop */
+@media screen and (min-width: 725px){
+    .privacy{
+        padding: 50px 40px 100px 40px;
+    }
 }

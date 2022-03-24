@@ -11,10 +11,8 @@ const Privacy: NextPage = () => (
     </Head>
 
     <div className={styles.privacy}>
-      <div>
-        <h2>Privacy and Confidentiality Policy</h2>
-        <p>This document states the confidentiality and personal information handling practices of LineHayat ('us', 'we', or 'our').</p>
-      </div>
+      <h1>Privacy and Confidentiality Policy</h1>
+      <p className={styles.subHead}>This document states the confidentiality and personal information handling practices of LineHayat ('us', 'we', or 'our').</p>
       <div>
         <h2>Overview</h2>
         <p>We hope to establish a clear understanding with our users, herein referred to as 'Sharers' or 'you', regarding our confidentiality and privacy handling practices. We hope this policy provides our Sharers with a good understanding and promotes confidence as well as trust in the services provided by LineHayat.</p>

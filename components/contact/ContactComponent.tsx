@@ -9,27 +9,28 @@ const fb = require('../../assets/images/contact/fbIcon.svg').default.src;
 function ContactComponent() {
   return ( 
     <div className={styles.contact}>
-      <img src={paperPlane} alt="Paper plane" className={styles.paperPlane}/>
-      <h1 id="contact" >Get Connected</h1>
-      <div className={styles.contactText}>
-        <p>We would love to hear from you!</p>
-        <p>For any enquiries and feedback, please get in touch with us via:</p>
+      <div className={styles.connect}>
+        <h1 id="contact" >Get Connected</h1>
+        <div className={styles.contactText}>
+          <p>We would love to hear from you!</p>
+          <p>For any enquiries and feedback, please get in touch with us via:</p>
+        </div>
+        <div className = {styles.socials}>
+          <a href="https://www.instagram.com/linehayat_usm">
+            <img src={insta}/>
+          </a>
+          <a href="https://www.linkedin.com/company/linehayatusm/">
+            <img src={linkedIn}/>
+          </a>
+          <a href="https://www.facebook.com/linehayat.usm">
+            <img src={fb}/>
+          </a>
+          <a href="mailto:linehayat@usm.my">
+            <img src={email}/>
+          </a>
+        </div>
       </div>
-      <div className = {styles.socials}>
-        <a href="https://www.instagram.com/linehayat_usm">
-          <img src={insta}/>
-        </a>
-        <a href="https://www.linkedin.com/company/linehayatusm/">
-          <img src={linkedIn}/>
-        </a>
-        <a href="https://www.facebook.com/linehayat.usm">
-          <img src={fb}/>
-        </a>
-        <a href="mailto:linehayat@usm.my">
-          <img src={email}/>
-        </a>
-      </div>
-      <div >
+      <div>
         <h1 id="contact" >Feedback to LineHayat </h1>
         <p >
           We are delighted to be able to help you in your most challenging time.
@@ -44,6 +45,7 @@ function ContactComponent() {
           <a href="https://docs.google.com/forms/d/1sS2esF4vrfVe9bhoo0TBOn4rrPTSpCGnwfbSiKOZINY/viewform?edit_requested=true" />
         </div>
       </div>
+      <img src={paperPlane} alt="Paper plane" className={styles.paperPlane}/>
     </div>
   );
 }

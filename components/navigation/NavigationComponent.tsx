@@ -7,7 +7,7 @@ function NavigationComponent() {
     <nav className={styles.navBar}>
        <a href="/"><img src={logo}/></a>
       <div className={styles.navLinks}>
-        <a className={styles.link} href="/chat">Chat</a>
+        <a className={[styles.link, styles.chat].join(' ')} href="/chat">Chat</a>
         <a className={styles.link} href="/">About</a>
         <a className={styles.link} href="/faq">FAQ</a>
       </div>

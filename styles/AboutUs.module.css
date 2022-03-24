@@ -1,17 +1,24 @@
+.aboutUs{
+    margin-bottom: 50px;
+    border-bottom: 1px solid var(--dark-brown);
+}
+
 .aboutUs h1{
+    font-size: 2rem;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }
 
 .aboutUs h2{
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 10px;
 }
 
 .aboutUs h4{
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     text-align: center;
-    margin-bottom: 30px;
+    margin: 40px 0 50px 0;
 }
 
 .reverse{
@@ -21,24 +28,82 @@
 .split{
     display: flex;
     justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
 }
 
 .text{
-    flex: .5325 .5325;
+   flex: 1 1;
 }
 
-.image{
-    flex: .4325 .4325;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+.text ul li, .centeredText ul li{
+    font: normal normal 700 1.125rem/1.25em printclearly;
+    color: var(--brown);
+    width: fit-content;
+}
+
+.centeredText{
+    width: fit-content;
+    margin: auto;
+}
+
+.centeredText p{
+    margin: auto;
+}
+
+.image, .centeredImage{
+    display: none;
 }
 
 .image img{
     width: 100%;
 }
 
-.split p{
+.split p, .centeredText p{
     margin-bottom: 1rem;
+}
+
+/* Desktop */
+@media screen and (min-width: 725px){
+    .aboutUs h1{
+        margin-bottom: 20px;
+        font-size: 2.25rem;
+    }
+
+    .abooutUs h2{
+        font-size: 1.75rem;
+    }
+
+    .abooutUs h4{
+        font-size: 1.5rem;
+        text-align: center;
+        margin: 15px 0 50px 0;
+    }
+
+    .text{
+        flex: .65 .65;
+    }
+
+    .text ul, .centeredText ul{
+        padding-left: 40px;
+    }
+
+    .text div{
+        padding: 0 40px;
+    }
+
+    .image{
+        display: flex;
+        flex: .35 .35;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 0 40px;
+    }
+
+    .centeredImage{
+        display: flex;
+        justify-content: center;
+        max-height: 300px;
+        margin-top: 30px;
+    }
 }

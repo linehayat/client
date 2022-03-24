@@ -1,6 +1,6 @@
 .faq{
     background-color: var(--gray);
-    padding: 50px 4rem 100px 4rem;
+    padding: 50px 20px 100px 20px;
 }
 
 .faq h1{
@@ -17,6 +17,7 @@
 .faq ul{
     color: var(--brown);
     list-style: none;
+    padding: 0
 }
 
 .type{
@@ -36,6 +37,7 @@
 .answer{
     font: normal normal 1.125rem/1.25em printclearly;
     padding-left: 20px;
+    margin-bottom: 30px;
 }
 
 .faq p{
@@ -45,4 +47,16 @@
 .faq span{
     text-decoration: underline;
     color: var(--dark-brown);
+}
+
+/* Desktop */
+@media screen and (min-width: 725px){
+    .faq{
+        padding: 50px 40px 100px 40px;
+    }
+
+    .faq ul{
+        padding-left: 40px;
+    }
+    
 }

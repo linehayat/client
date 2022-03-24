@@ -2,6 +2,10 @@
     background-color: var(--blue);
     display: flex;
     justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 9;
+    box-shadow: 0 2.5px 5px rgba(0, 0, 0, .2);
 }
 
 .navBar img{
@@ -10,6 +14,7 @@
 }
 
 .navLinks{
+    font-size: 1rem;
     font-family: crimsonfont,sans-serif;
     color: var(--dark-brown);
     display: flex;
@@ -18,10 +23,28 @@
     margin-right: 10px;
 }
 
+.chat{
+    background-color: white;
+    padding: 5px 20px;
+    border-radius: 7.5px;
+}
+
 .navLinks a{
     margin: 0 20px;
+    transition: color .2s, background-color .2s;
 }
 
 .navLinks a:hover{
     color: var(--brown);
+}
+
+.chat:hover{
+    background-color: var(--gray);
+}
+
+/* Desktop */
+@media screen and (min-width: 725px){
+    .navLinks{
+        font-size: 1.25rem;
+    }
 }
