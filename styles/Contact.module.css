@@ -1,0 +1,34 @@
+.contact{
+    text-align: center;
+}
+
+.paperPlane{
+    margin-bottom: 60px;
+    width: 80%;
+} 
+
+.contact p{
+    margin-bottom: 10px;
+}
+
+.contact h1{
+    margin-bottom: 10px;
+}
+
+.contactText{
+    margin-bottom: 30px;
+}
+
+.socials{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+}
+
+.socials a{
+    height: 100px;
+}
+
+.socials img{
+    height: 100%;
+}

@@ -1,6 +1,8 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
-import Link from 'next/link';
+
+import AboutUsComponent from '../components/aboutus/AboutUsComponent';
+import ContactComponent from '../components/contact/ContactComponent';
 
 const Home: NextPage = () => (
   <div>
@@ -11,12 +13,11 @@ const Home: NextPage = () => (
     </Head>
 
     <main>
-      <h1>
-        LineHayat homepage
-      </h1>
-      <Link href="/chat">Chat</Link>
+      <AboutUsComponent/>
+      <ContactComponent/>
     </main>
   </div>
 );
+
 
 export default Home;

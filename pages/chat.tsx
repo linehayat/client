@@ -12,7 +12,6 @@ const Chat: NextPage = () => (
     </Head>
 
     <main>
-      <ChatScreen />
     </main>
   </div>
 );

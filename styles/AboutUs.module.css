@@ -1,0 +1,44 @@
+.aboutUs h1{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.aboutUs h2{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.aboutUs h4{
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.reverse{
+    flex-direction: row-reverse;
+}
+
+.split{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.text{
+    flex: .5325 .5325;
+}
+
+.image{
+    flex: .4325 .4325;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.image img{
+    width: 100%;
+}
+
+.split p{
+    margin-bottom: 1rem;
+}

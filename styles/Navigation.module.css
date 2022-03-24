@@ -1,0 +1,27 @@
+.navBar{
+    background-color: var(--blue);
+    display: flex;
+    justify-content: space-between;
+}
+
+.navBar img{
+    height: 60px;
+    margin: 10px 0 10px 20px;
+}
+
+.navLinks{
+    font-family: crimsonfont,sans-serif;
+    color: var(--dark-brown);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.navLinks a{
+    margin: 0 20px;
+}
+
+.navLinks a:hover{
+    color: var(--brown);
+}

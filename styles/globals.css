@@ -7,27 +7,59 @@ body {
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
   box-sizing: border-box;
   margin: 0;
 }
 
+h1, h2, h3, h4, h5, h6{
+  font-family: crimsonfont,sans-serif;
+  color: var(--dark-brown);
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2{
+  font-size: 1.25rem;
+}
+
+p{
+  font: normal normal 700 1.125rem/1.25em printclearly;
+  color: var(--brown);
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+main{
+  background: linear-gradient(var(--off-white), var(--light-brown));
+}
+
+main{
+  padding: 50px 20% 100px 20%;
+}
+
+/* Mobile */
+@media screen and (max-width: 725px){
+  main{
+      padding: 50px 10% 100px 10%;
+  }
+}
+
 :root {
-  /* Background Gradient */
-  --gradient-background: linear-gradient(#fefaf0,#f7ecd2);
-
-  /* Text Styling */
-  /*--crimson-font: ;*/
-
+   /* Background Gradient Colors */
+   --off-white: #fefaf0;
+   --light-brown: #f7ecd2;
+ 
   /* Colors */
   --brown: #846859;
   --dark-brown: #5b4c43;
   --gray: #F3F3F3;
+  --blue: #ccdfdf;
 }
 
 @font-face {
@@ -39,4 +71,3 @@ a {
   font-family: 'crimsonfont';
   src: url('./fonts/Crimson-Bold.otf') format('opentype');
 }
-

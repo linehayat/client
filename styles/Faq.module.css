@@ -1,0 +1,48 @@
+.faq{
+    background-color: var(--gray);
+    padding: 50px 4rem 100px 4rem;
+}
+
+.faq h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.faq h2{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--dark-brown);
+}
+
+.faq ul{
+    color: var(--brown);
+    list-style: none;
+}
+
+.type{
+    margin-bottom: 50px;
+}
+
+.qna{
+    margin-bottom: 20px;
+}
+
+.question{
+    font-family: crimsonfont,sans-serif;
+    font-size: 1.125rem;
+    margin-bottom: 10px;
+}
+
+.answer{
+    font: normal normal 1.125rem/1.25em printclearly;
+    padding-left: 20px;
+}
+
+.faq p{
+    text-align: center;
+}
+
+.faq span{
+    text-decoration: underline;
+    color: var(--dark-brown);
+}
