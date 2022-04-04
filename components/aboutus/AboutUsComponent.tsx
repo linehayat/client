@@ -1,8 +1,5 @@
 import React from 'react';
 import styles from '../../styles/AboutUs.module.css';
-const float1 = require('../../assets/images/aboutus/float1.gif').default.src;
-const float2 = require('../../assets/images/aboutus/float2.gif').default.src;
-const nojudging = require('../../assets/images/aboutus/no-judging.svg').default.src;
 
 function AboutUsComponent() {
   return (
@@ -10,7 +7,7 @@ function AboutUsComponent() {
       <h1 id="aboutus">About LineHayat</h1>
       <div className={[styles.split, styles.reverse].join(' ')}>
         <div className={styles.image}>
-          <img src={float1} alt="Space boy on the phone" />
+          <img src='/images/aboutus/float1.gif' alt="Space boy on the phone" />
         </div>
         <div className={styles.text}>
           <h2>Who We Are</h2>
@@ -45,7 +42,7 @@ function AboutUsComponent() {
 
       <div className={styles.split}>
         <div className={styles.image}>
-          <img src={float2} alt="Space girl on the phone" />
+          <img src='/images/aboutus/float2.gif' alt="Space girl on the phone" />
         </div>
         <div className={styles.text}>
           <h2>Who We Are Not</h2>
@@ -65,8 +62,11 @@ function AboutUsComponent() {
         </div>
       </div>
 
-      <div>
-        <div className={styles.centeredText}>
+      <div className={[styles.split, styles.reverse].join(' ')}>
+        <div className={styles.image}>
+          <img src='/images/aboutus/listening-ear.svg' alt="Listening Ear" />
+        </div>
+        <div className={styles.text}>
           <h2>What We Do</h2>
           <div>
             <div>
@@ -91,13 +91,31 @@ function AboutUsComponent() {
                 Anything that concerns you
               </li>
             </ul>
+          <h4>#You Share, We Care</h4>
           </div>
         </div>
-        <div className={styles.centeredImage}>
-          <img src={nojudging} alt="Happy people talking" />
-        </div>
-        <h4>#You Share, We Care</h4>
       </div>
+
+      <div className={styles.splitMid}>
+        <div className={[styles.image, styles.imagePadding].join(' ')}>
+          <img src="/images/aboutus/no-judging.svg" alt="No judging" />
+        </div>
+        <div className={[styles.text, styles.center].join(' ')}>
+          <h2>What To Expect:</h2>
+          <p>You are ensured that:</p>
+          <p>
+            We <span>don't judge</span>
+          </p>
+          <p>
+            We <span>won't tell you what to do</span>
+          </p>
+          <p>
+            Everything is <span>confidential and anonymous</span>
+          </p>
+        </div>
+      </div>
+    
+      <img src='/images/contact/paperPlane.svg' alt="Paper plane" className={styles.paperPlane}/>
     </div>
   );
 }

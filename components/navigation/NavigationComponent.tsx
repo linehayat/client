@@ -1,15 +1,19 @@
 import React from 'react';
 import styles from '../../styles/Navigation.module.css';
-const logo = require('../../assets/images/navigation/lineHayatLogo.svg').default.src;
 
 function NavigationComponent() {
   return (
     <nav className={styles.navBar}>
-       <a href="/"><img src={logo}/></a>
-      <div className={styles.navLinks}>
-        <a className={[styles.link, styles.chat].join(' ')} href="/chat">Chat</a>
-        <a className={styles.link} href="/">About</a>
-        <a className={styles.link} href="/faq">FAQ</a>
+      <div className={styles.left}>
+        <a href="/"><img src='/images/navigation/lineHayatLogo.svg'/></a>
+        <div className={styles.navLinks}>
+          <a className={[styles.link, styles.chat].join(' ')} href="/chat">Chat</a>
+          <a className={styles.link} href="/">About</a>
+          <a className={styles.link} href="/faq">FAQ</a>
+        </div>
+      </div>
+      <div className={styles.lang}>
+        <button></button>
       </div>
     </nav>
   );

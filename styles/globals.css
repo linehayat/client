@@ -12,7 +12,12 @@ body {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6{
+h1{
+  font-family: berkshireswash,sans-serif;
+  color: var(--dark-brown);
+}
+
+h2, h3, h4, h5, h6{
   font-family: crimsonfont,sans-serif;
   color: var(--dark-brown);
 }
@@ -35,14 +40,6 @@ a {
   text-decoration: none;
 }
 
-main{
-  background: linear-gradient(var(--off-white), var(--light-brown));
-}
-
-main{
-  padding: 50px 10% 100px 10%;
-}
-
 :root {
    /* Background Gradient Colors */
    --off-white: #fefaf0;
@@ -56,6 +53,11 @@ main{
 }
 
 @font-face {
+  font-family: 'berkshireswash';
+  src: url('./fonts/berkshireswash-regular.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'printclearly';
   src: url('./fonts/print_clearly_bold_tt.ttf') format('truetype');
 }
@@ -64,3 +66,4 @@ main{
   font-family: 'crimsonfont';
   src: url('./fonts/Crimson-Bold.otf') format('opentype');
 }
+

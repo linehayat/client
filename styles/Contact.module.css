@@ -4,46 +4,62 @@
 
 .connect{
     margin-bottom: 50px;
-    border-bottom: 1px solid var(--dark-brown);
 }
 
-.paperPlane{
-    margin-top: 60px;
-    width: 80%;
-    max-height: 150px;
-} 
-
 .contact p{
-    margin-bottom: 10px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+    max-width: 1000px;
+    font-size: 1.3rem;
 }
 
 .contact h1{
-    margin-bottom: 10px;
-}
-
-.contactText{
     margin-bottom: 30px;
 }
 
+.contactText{
+    margin-bottom: 50px;
+}
+
 .socials{
-    display: flex;
+    display: grid;
     justify-content: space-evenly;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 50px;
 }
 
+.socials p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
 .socials a{
     height: 50px;
+    display: flex;
+    margin-bottom: 20px;
+    transition: filter .2s;
+}
+
+.socials a:hover{
+    filter: opacity(0.5);
+    transition: filter .2s;
 }
 
 .socials img{
     height: 100%;
+    margin-right: 20px;
 }
 
 /* Desktop */
 @media screen and (min-width: 725px){
     .socials a{
         height: 75px;
+    }
+
+    .contact p{
+        width: 100%;
     }
 }

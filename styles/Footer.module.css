@@ -1,0 +1,16 @@
+.footer{
+    background-color: var(--blue);
+    font: normal normal 1rem/1.25em crimsonfont,sans-serif;
+    color: var(--dark-brown);
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+
+.link{
+    margin: 0 20px;
+}
+
+.link:hover{
+    color: var(--brown);
+}

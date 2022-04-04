@@ -1,11 +1,5 @@
 import React from 'react';
 import styles from '../../styles/Contact.module.css';
-const paperPlane = require('../../assets/images/contact/paperPlane.svg').default.src;
-const email = require('../../assets/images/contact/emailIcon.svg').default.src;
-const insta = require('../../assets/images/contact/igIcon.svg').default.src;
-const linkedIn = require('../../assets/images/contact/linkedInIcon.svg').default.src;
-const fb = require('../../assets/images/contact/fbIcon.svg').default.src;
-
 function ContactComponent() {
   return ( 
     <div className={styles.contact}>
@@ -17,23 +11,29 @@ function ContactComponent() {
         </div>
         <div className = {styles.socials}>
           <a href="https://www.instagram.com/linehayat_usm">
-            <img src={insta}/>
+            <img src='/images/contact/igIcon.svg'/>
+            <p>@linehayat_usm</p>
           </a>
           <a href="https://www.linkedin.com/company/linehayatusm/">
-            <img src={linkedIn}/>
+            <img src='/images/contact/linkedInIcon.svg'/>
+            <p>/linehayatusm</p>
           </a>
           <a href="https://www.facebook.com/linehayat.usm">
-            <img src={fb}/>
+            <img src='/images/contact/fbIcon.svg'/>
+            <p>/linehayat.usm</p>
           </a>
           <a href="mailto:linehayat@usm.my">
-            <img src={email}/>
+            <img src='/images/contact/emailIcon.svg'/>
+            <p>linehayat@usm.my</p>
           </a>
         </div>
       </div>
       <div>
-        <h1 id="contact" >Feedback to LineHayat </h1>
+        <h1> Feedback to LineHayat </h1>
         <p >
           We are delighted to be able to help you in your most challenging time.
+        </p>
+        <p>
           If you have used our service, it would be wonderful to know your
           experience to provide better services in the future.
         </p>
@@ -45,7 +45,6 @@ function ContactComponent() {
           <a href="https://docs.google.com/forms/d/1sS2esF4vrfVe9bhoo0TBOn4rrPTSpCGnwfbSiKOZINY/viewform?edit_requested=true" />
         </div>
       </div>
-      <img src={paperPlane} alt="Paper plane" className={styles.paperPlane}/>
     </div>
   );
 }
