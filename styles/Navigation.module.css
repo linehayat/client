@@ -27,23 +27,13 @@
     margin-left: 20px;
 }
 
-.chat{
-    background-color: white;
-    padding: 5px 20px;
-    border-radius: 7.5px;
-}
-
 .navLinks a{
-    margin: 0 20px;
+    margin: 0 15px;
     transition: color .2s, background-color .2s;
 }
 
 .navLinks a:hover{
     color: var(--brown);
-}
-
-.chat:hover{
-    background-color: var(--gray);
 }
 
 .lang{
@@ -55,6 +45,6 @@
 /* Desktop */
 @media screen and (min-width: 725px){
     .navLinks{
-        font-size: 1.25rem;
+        font-size: .9rem;
     }
 }

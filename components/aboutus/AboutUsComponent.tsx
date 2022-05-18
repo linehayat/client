@@ -104,10 +104,10 @@ function AboutUsComponent() {
           <h2>What To Expect:</h2>
           <p>You are ensured that:</p>
           <p>
-            We <span>don't judge</span>
+            We <span>{"don't judge"}</span>
           </p>
           <p>
-            We <span>won't tell you what to do</span>
+            We <span>{"won't tell you what to do"}</span>
           </p>
           <p>
             Everything is <span>confidential and anonymous</span>

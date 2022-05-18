@@ -12,18 +12,18 @@ const Privacy: NextPage = () => (
 
     <div className={styles.privacy}>
       <h1>Privacy and Confidentiality Policy</h1>
-      <p className={styles.subHead}>This document states the confidentiality and personal information handling practices of LineHayat ('us', 'we', or 'our').</p>
+      <p className={styles.subHead}>{"This document states the confidentiality and personal information handling practices of LineHayat ('us', 'we', or 'our')."}</p>
       <div>
         <h2>Overview</h2>
-        <p>We hope to establish a clear understanding with our users, herein referred to as 'Sharers' or 'you', regarding our confidentiality and privacy handling practices. We hope this policy provides our Sharers with a good understanding and promotes confidence as well as trust in the services provided by LineHayat.</p>
+        <p>{"We hope to establish a clear understanding with our users, herein referred to as 'Sharers' or 'you', regarding our confidentiality and privacy handling practices. We hope this policy provides our Sharers with a good understanding and promotes confidence as well as trust in the services provided by LineHayat."}</p>
       </div>
       <div>
         <h2>Scope</h2>
-        <p>This policy covers LineHayat's handling of personal information of our Sharers for Live Chat and Call services. To keep our Sharers' information safe, we operate by strict guidelines to ensure anonymity and confidentiality. This policy also covers the risks of using our services and limitations of the service we are able to provide. We may update this policy from time to time, and changes will be publicly announced before its implementation.</p>
+        <p>{"This policy covers LineHayat's handling of personal information of our Sharers for Live Chat and Call services. To keep our Sharers' information safe, we operate by strict guidelines to ensure anonymity and confidentiality. This policy also covers the risks of using our services and limitations of the service we are able to provide. We may update this policy from time to time, and changes will be publicly announced before its implementation."}</p>
       </div>
       <div>
         <h2>Anonymity</h2>
-        <p>One of the unique features of the Listening Services provided by LineHayat is its emphasis on anonymity. Both Listening Volunteers and Sharers will remain anonymous at all times. Therefore, our helpline is designed in such a way that our Listening Volunteers will not be able to track the Sharer's phone number, identity or any other personal information.</p>
+        <p>{"One of the unique features of the Listening Services provided by LineHayat is its emphasis on anonymity. Both Listening Volunteers and Sharers will remain anonymous at all times. Therefore, our helpline is designed in such a way that our Listening Volunteers will not be able to track the Sharer's phone number, identity or any other personal information."}</p>
       </div>
       <div>
         <h2>Confidentiality</h2>
@@ -41,7 +41,7 @@ const Privacy: NextPage = () => (
         <h2>Risks of using LineHayat</h2>
         <p>Our Sharers should be aware of certain personal risks of using our services, including but not limited to you accidentally disclosing your personal information such as your institution, identity or those of the people involved in your issue, your location, etc. However, we at LineHayat stand by our principles of anonymity and confidentiality. Your information remains safe with us and will not be shared with others.</p>
         <p>Some Sharers might also experience distress during their sharing, especially if the issues concerned are heavy or triggering for them. If this happens to you, please let our Listening Volunteers know so that we can try to help you overcome it to the best of our abilities. We would also wish to remind our Sharers that you are free to end the conversation at any point during the communication if you feel it is necessary.</p>
-        <p>During peak hours, our helpline might be frequently engaged due to high rates of call traffic. In this case, we might not be able to pick up every call. We hope you don't get discouraged and are most welcomed to refer to our list of other similar resources for help.</p>
+        <p>{"During peak hours, our helpline might be frequently engaged due to high rates of call traffic. In this case, we might not be able to pick up every call. We hope you don't get discouraged and are most welcomed to refer to our list of other similar resources for help."}</p>
       </div>
       <div>
         <h2>Disclaimer</h2>

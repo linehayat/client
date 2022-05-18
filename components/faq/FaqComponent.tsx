@@ -3,8 +3,8 @@ import styles from '../../styles/Faq.module.css';
 import faqJson from '../../assets/json/faq.json';
 
 function FAQComponent() {
-  let faq = faqJson.en;
-  const questionOutput = (questions : any) => {
+  const faq = faqJson.en;
+  const questionOutput = (questions : Array<{questionText : string, answerText: string}>) => {
     return questions.map(question => (
       <div key={"Q" + question.questionText} className={styles.qna}>
         <li className={styles.question}>{question.questionText}</li>
